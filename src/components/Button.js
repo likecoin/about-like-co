@@ -4,7 +4,12 @@ import cn from "classnames"
 function getPresetClassName({ preset, theme }) {
   switch (preset) {
     case 'outlined':
-      return 'text-like-cyan-light border-like-cyan-light border-[2px]'
+      return cn(
+        'border-[2px]',
+        theme === 'dark'
+          ? 'text-like-cyan-light border-like-cyan-light'
+          : 'text-dark-gray border-dark-gray'
+      )
     case 'filled':
       return 'bg-like-cyan-light text-like-green'
     default:
