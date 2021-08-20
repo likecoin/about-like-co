@@ -41,8 +41,8 @@ const IndexPage = () => {
           </div>
         </div>
         <div className="relative text-center p-[24px]">
-          <GradientText tag="h1" className="text-[42px] sm:text-[64px] md:text-[80px]">Decentralized Publishing</GradientText>
-          <p className="text-[20px]">
+          <GradientText tag="h1" className="text-[42px] sm:text-[64px] md:text-[80px] leading-tight">Decentralized Publishing</GradientText>
+          <p className="text-[20px] mt-[24px]">
             Digital evidence can now be secured, validated, and made readily available in perpetuity with #DePub.
           </p>
         </div>
@@ -153,7 +153,7 @@ const IndexPage = () => {
       </section>
 
       <div className="relative mx-[24px] mt-[88px] px-[16px] md:px-[64px] py-[64px] rounded-[16px] border-[1px] border-like-cyan-light">
-        <section className="flex flex-col items-center mt-[64px]">
+        <section className="flex flex-col items-center">
           <GradientText tag="h3" className="text-[32px] text-center">Join the community</GradientText>
           <ul className="grid grid-cols-2 sm:grid-flow-col-dense auto-cols-auto gap-x-[48px] md:gap-x-[96px] mt-[48px] gap-y-[48px]">
             {communityItems.map((type) => (

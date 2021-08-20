@@ -11,7 +11,7 @@ function getPresetClassName({ preset, theme }) {
           : 'text-dark-gray border-dark-gray'
       )
     case 'filled':
-      return 'bg-like-cyan-light text-like-green'
+      return 'text-like-green border-[2px] border-like-cyan-light bg-like-cyan-light'
     default:
     case 'white':
       return theme === 'dark' ? 'text-white' : 'text-dark-gray'
@@ -30,7 +30,6 @@ export default function Button({
 }) {
   const className = cn([
     'block',
-  
     'rounded-[12px]',
     'text-center',
     'font-600',
@@ -42,12 +41,14 @@ export default function Button({
     }
   ])
 
+  const Tag = props.href ? 'a' : 'button'
+
   return (
-    <a
+    <Tag
       className={className}
       {...props}
     >
       {children}
-    </a>
+    </Tag>
   )
 }
