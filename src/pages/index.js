@@ -27,8 +27,9 @@ const IndexPage = () => {
       {/* Hero Section */}
       <section>
         <div className="relative flex justify-center">
+          <svg className="w-full h-full max-h-screen pointer-events-none" viewBox="0 0 2560 1966" />
           <img
-            className="object-contain object-top max-h-screen transform scale-[1.8] translate-y-[40px] sm:translate-y-0"
+            className="absolute inset-0 top-0 object-contain object-top max-h-screen mx-auto transform scale-[1.8] translate-y-[40px] sm:translate-y-0"
             src={HeroImage}
             alt="#Depub"
           />
