@@ -28,11 +28,11 @@ const IndexPage = () => {
       <section>
         <div className="relative flex justify-center">
           <img
-            className="object-contain object-top max-h-screen"
+            className="object-contain object-top max-h-screen transform scale-[1.8] translate-y-[40px] sm:translate-y-0"
             src={HeroImage}
             alt="#Depub"
           />
-          <div className="absolute inset-x-0 bottom-0 h-[35%] flex justify-center">
+          <div className="absolute hidden inset-x-0 bottom-0 h-[25%] md:flex justify-center">
             <img
               className="w-[22px] mb-[24px] object-contain"
               src={ScrollDownHintImage}
@@ -49,7 +49,7 @@ const IndexPage = () => {
       </section>
 
       {/* Sub-Nav Section */}
-      <section className="mt-[88px]">
+      <section className="relative mt-[88px]">
         <nav className="flex justify-center">
           <ul className="grid sm:grid-flow-col-dense auto-cols-auto gap-x-[8px] gap-y-[16px]">
             <li>
@@ -89,7 +89,7 @@ const IndexPage = () => {
       </section>
 
       {/* Statistic Section */}
-      <section className="mt-[88px] flex justify-center">
+      <section className="relative mt-[88px] flex justify-center">
         <ul className="grid xl:grid-flow-col-dense auto-cols-auto gap-x-[96px] gap-y-[48px]">
           <li>
             <StatNumber
@@ -116,7 +116,7 @@ const IndexPage = () => {
       </section>
 
       {/* What depub offers Section */}
-      <section className="flex mt-[88px]">
+      <section className="relative flex mt-[88px]">
         <div className="relative flex justify-center flex-grow">
           <img
             className="absolute right-0 max-w-[750px] mr-[-120px] opacity-60 md:mr-0 md:opacity-100"
