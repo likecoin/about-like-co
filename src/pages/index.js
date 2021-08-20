@@ -125,7 +125,7 @@ const IndexPage = () => {
           />
         </div>
         <div className="relative flex flex-col justify-center flex-grow md:max-w-[66%] p-[24px]">
-          <GradientText tag="h2" className="text-[48px]">What DePub offers</GradientText>
+          <GradientText tag="h2" className="text-[48px] text-center md:text-left">What DePub offers</GradientText>
           <p className="mt-[24px] text-like-cyan-vlight text-[20px]">LikeCoin aims to empower content ownership, authenticity, and provenance. Creators can register content metadata to guarantee its integrity by acquiring an International Standard Content Number (ISCN). ISCN is a tool to authenticate and track content, just like a digital footprint.</p>
           <ul className="grid md:grid-cols-2	gap-x-[32px] gap-y-[48px] mt-[48px]">
             <li>
