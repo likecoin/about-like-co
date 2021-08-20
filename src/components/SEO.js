@@ -45,6 +45,7 @@ const SEO = ({ title, description, image, isArticle }) => {
         <meta name="twitter:description" content={seo.description} />
       )}
       {seo.image && <meta name="twitter:image" content={seo.image} />}
+      <link rel="stylesheet" href="https://use.typekit.net/yqg7ihd.css" />
     </Helmet>
   )
 }

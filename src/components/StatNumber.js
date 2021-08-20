@@ -7,7 +7,7 @@ export default function StatNumber({
   return (
     <div>
       <Divider />
-      <div className="text-[56px] font-bold text-white">
+      <div className="text-[56px] font-bold font-display text-white">
         {value}
         {withPlus && <span className="text-like-cyan-vlight text-opacity-70">+</span>}
       </div>

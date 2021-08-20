@@ -6,7 +6,7 @@ export default function WhatDepubOfferItem({ title, children, ...props}) {
     <div {...props}>
       <div className="text-like-cyan"><IconDepub /></div>
       <h3 className="mt-[8px] text-like-cyan-light text-[20px] font-bold">{title}</h3>
-      <p className="mt-[8px] text-like-cyan-vlight text-[16px] text-opacity-70">{children}</p>
+      <p className="mt-[8px] text-like-cyan-vlight text-[16px] text-opacity-80">{children}</p>
     </div>
   )
 }

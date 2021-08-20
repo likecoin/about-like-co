@@ -20,6 +20,10 @@ module.exports = {
       'shade-gray': '#EBEBEB',
       'light-gray': '#F7F7F7',
     },
+    fontFamily: {
+      'display': 'proxima-nova, sans-serif',
+      'body': '"Open Sans", sans-serif',
+    },
     extend: {},
   },
   variants: {

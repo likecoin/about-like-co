@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  @apply bg-like-green;
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
