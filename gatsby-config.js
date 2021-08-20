@@ -2,6 +2,11 @@ module.exports = {
   siteMetadata: {
     siteUrl: "https://about.like.co",
     title: "LikeCoin",
+    titleTemplate: "%s | LikeCoin",
+    description:
+      "Decentralized Publishing - Digital evidence can now be secured, validated, and made readily available in perpetuity with #DePub.",
+    image: "/og.png",
+    twitterUsername: "@likecoin",
   },
   plugins: [
     "gatsby-plugin-netlify-cms",

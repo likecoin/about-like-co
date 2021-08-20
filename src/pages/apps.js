@@ -4,6 +4,7 @@ import AppItem from "../components/AppItem"
 import GradientText from "../components/GradientText"
 import Layout from "../components/Layout"
 import PluginItem from "../components/PluginItem"
+import Seo from "../components/SEO"
 
 const AppsPage = () => {
   const apps = [
@@ -60,6 +61,7 @@ const AppsPage = () => {
   ]
   return (
     <Layout className="text-like-cyan-vlight">
+      <Seo title="Apps" />
       <section className="flex flex-col items-center mt-[100px] p-[24px]">
         <GradientText tag="h3" className="text-[32px] text-center">Find our apps</GradientText>
         <ul className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[24px] mt-[88px]">
