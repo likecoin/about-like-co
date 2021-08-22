@@ -54,7 +54,10 @@ export default function AwardsPartnersSection({ className, ...props }) {
       <GradientText tag="h3" className="text-[32px] text-center">Awards & Partners</GradientText>
       <ul className="grid sm:grid-cols-2 md:grid-cols-4 gap-x-[16px] gap-y-[32px] mt-[32px]">
         {items.map(({ key, title, url, image }) => (
-          <li key={key}>
+          <li
+            key={key}
+            className={cn({ 'hover:scale-[1.1] hover:relative hover:z-10 active:scale-[1.05] transition transition-transform': !!url })}
+          >
             {url ? (
               <a
                 href={url}

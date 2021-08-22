@@ -4,7 +4,7 @@ import cn from "classnames"
 export default function LatestNewsItem({ className, title, date, url, image, ...props }) {
   return (
     <a
-      className={cn('block bg-white border-like-cyan-light border-[1px] rounded-[8px] overflow-hidden', className)} {...props}
+      className={cn('block bg-white border-like-cyan-light border-[1px] rounded-[8px] hover:scale-[1.05] hover:shadow-xl hover:ring-black hover:relative hover:z-10 active:scale-[1] transition transition-transform overflow-hidden', className)} {...props}
       href={url}
       title={title}
       target="_blank"

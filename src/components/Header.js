@@ -109,7 +109,7 @@ export default function Header() {
 
   return (
     <header className="absolute z-10 inset-x-0 top-0 flex items-center justify-between px-[32px] py-[24px]">
-      <Link to="/">
+      <Link className="transition transition-opacity hover:opacity-90 active:opacity-50" to="/">
         <Logo />
       </Link>
 

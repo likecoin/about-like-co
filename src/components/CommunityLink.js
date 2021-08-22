@@ -31,7 +31,7 @@ export default function CommunityLink({ type, ...props }) {
   const { icon: Icon, label, url } = communityItems[type]
   return (
     <a
-      className="flex flex-col items-center text-center" {...props}
+      className="flex flex-col items-center text-center transition transition-opacity hover:opacity-70 active:opacity-50" {...props}
       href={url}
       target="_blank"
       rel="noreferrer"

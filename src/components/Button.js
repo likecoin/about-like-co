@@ -6,17 +6,19 @@ function getPresetClassName({ preset, theme }) {
     case 'outlined':
       return cn(
         'border-[2px]',
+        'hover:text-opacity-70',
+        'active:text-opacity-50',
         theme === 'dark'
           ? 'text-like-cyan-light border-like-cyan-light'
           : 'text-dark-gray border-dark-gray'
       )
     case 'filled':
-      return 'text-like-green border-[2px] border-like-cyan-light bg-like-cyan-light'
+      return 'text-like-green border-[2px] border-like-cyan-light bg-like-cyan-light hover:bg-opacity-70 active:bg-opacity-50'
     default:
     case 'white':
-      return theme === 'dark' ? 'text-white' : 'text-dark-gray'
+      return cn(theme === 'dark' ? 'text-white' : 'text-dark-gray', 'hover:text-like-cyan')
     case 'plain':
-      return 'text-like-cyan-light'
+      return 'text-like-cyan-light hover:text-opacity-70 active:text-opacity-50'
   }
 }
 
@@ -30,11 +32,12 @@ const Button = React.forwardRef(({
 }, ref) => {
   const className = cn([
     'block',
+    'transition',
+    'transition-colors',
     'rounded-[12px]',
     'text-center',
     'font-600',
     'leading-normal',
-    'cursor-pointer',
     getPresetClassName({ preset, theme }),
     classNameProp,
     {
