@@ -20,20 +20,21 @@ function getPresetClassName({ preset, theme }) {
   }
 }
 
-export default function Button({ 
+const Button = React.forwardRef(({ 
   className: classNameProp,
   preset = 'plain',
   theme = 'dark',
   isNoPadding = '',
   children, 
   ...props
-}) {
+}, ref) => {
   const className = cn([
     'block',
     'rounded-[12px]',
     'text-center',
     'font-600',
     'leading-normal',
+    'cursor-pointer',
     getPresetClassName({ preset, theme }),
     classNameProp,
     {
@@ -45,10 +46,13 @@ export default function Button({
 
   return (
     <Tag
+      ref={ref}
       className={className}
       {...props}
     >
       {children}
     </Tag>
   )
-}
+})
+
+export default Button
