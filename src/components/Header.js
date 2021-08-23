@@ -85,23 +85,6 @@ export default function Header() {
       ],
     },
     {
-      title: "About",
-      items: [
-        {
-          title: "Blog",
-          url: "https://medium.com/likecoin",
-        },
-        {
-          title: "FAQ",
-          url: "https://docs.like.co",
-        },
-        {
-          title: "Logo & Brands",
-          url: "https://likecoin.notion.site/Branding-and-Design-96b3d582c3014003985a8819b31217fa",
-        },
-      ],
-    },
-    {
       title: "ISCN App",
       url: "https://app.like.co",
     },
