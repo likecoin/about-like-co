@@ -1,5 +1,5 @@
 import React, { Fragment } from "react"
-import { Disclosure, Menu, Popover, Transition } from "@headlessui/react"
+import { Disclosure, Menu, Transition } from "@headlessui/react"
 import cn from "classnames"
 import { Link } from "gatsby"
 
@@ -214,12 +214,12 @@ export default function Header() {
       </nav>
 
       {/* Mobile Menu */}
-      <Popover className="lg:hidden" as="nav">
-        <Popover.Button as={Fragment}>
+      <Menu className="lg:hidden" as="nav">
+        <Menu.Button as={Fragment}>
           <Button className="flex items-center" preset="filled">
             Menu <ArrowDown className="ml-[8px]" />
           </Button>
-        </Popover.Button>
+        </Menu.Button>
         <Transition
           as={Fragment}
           enter="transition ease-out duration-200"
@@ -229,7 +229,7 @@ export default function Header() {
           leaveFrom="opacity-100 translate-y-0"
           leaveTo="opacity-0 translate-y-1"
         >
-          <Popover.Panel className="absolute inset-x-0 z-10 w-screen mt-[24px] px-[32px]">
+          <Menu.Items className="absolute inset-x-0 z-10 w-screen mt-[24px] px-[32px] outline-none">
             {() => {
               const topLevelItems = [];
               menuItems.forEach((topLevelItem, index) => {
@@ -249,7 +249,7 @@ export default function Header() {
                         </Fragment>
                       )
                       return (
-                        <Popover.Button
+                        <Menu.Item
                           key={secondLevelItem.title}
                           as={Fragment}
                         >
@@ -275,7 +275,7 @@ export default function Header() {
                               </Button>
                             </Link>
                           )}
-                        </Popover.Button>
+                        </Menu.Item>
                       )
                     }
                   )
@@ -309,7 +309,7 @@ export default function Header() {
                   )
                 } else {
                   topLevelItems.push(
-                    <Popover.Button key={topLevelItem.title} as={Fragment}>
+                    <Menu.Item key={topLevelItem.title} as={Fragment}>
                       <Button
                         preset="filled"
                         href={topLevelItem.url}
@@ -318,7 +318,7 @@ export default function Header() {
                       >
                         {topLevelItem.title}
                       </Button>
-                    </Popover.Button>
+                    </Menu.Item>
                   )
                 }
               })
@@ -328,9 +328,9 @@ export default function Header() {
                 </div>
               )
             }}
-          </Popover.Panel>
+          </Menu.Items>
         </Transition>
-      </Popover>
+      </Menu>
     </header>
   )
 }
