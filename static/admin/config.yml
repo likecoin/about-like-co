@@ -1,0 +1,100 @@
+backend:
+  name: git-gateway
+  repo: likecoin/about-like-co
+  branch: main
+  squash_merges: true
+  commit_messages:
+    create: 💬 Create {{collection}} “{{slug}}”
+    update: 💬 Update {{collection}} “{{slug}}”
+    delete: 🔥 Delete {{collection}} “{{slug}}”
+    uploadMedia: 🍱 Upload “{{path}}”
+    deleteMedia: 🔥 Delete “{{path}}”
+    openAuthoring: '🚧 {{message}}'
+# Set to true for development
+local_backend: false
+publish_mode: editorial_workflow
+media_folder: "/static/uploads"
+public_folder: "/uploads"
+i18n:
+  structure: single_file
+  locales: [en, zh]
+  default_locale: en
+collections:
+  - name: news
+    label: "News"
+    folder: "src/content/news"
+    create: true
+    i18n:
+      structure: multiple_folders
+    sortable_fields:
+      - date
+      - title
+    summary: "{{fields.date}} - {{fields.title}}"
+    fields:
+      - label: "Type"
+        name: type
+        widget: hidden
+        default: "news"
+        i18n: duplicate
+      - label: "Title"
+        name: title
+        widget: string
+        i18n: true
+      - label: "Date"
+        name: date
+        widget: datetime
+        format: "YYYY-MM-DD"
+        date_format: "YYYY-MM-DD"
+        time_format: false
+        i18n: duplicate
+      - label: "URL"
+        name: url
+        widget: string
+        i18n: duplicate
+      - label: "Image"
+        name: image
+        widget: image
+        i18n: duplicate
+        media_folder: "/static/uploads/latest-news"
+        public_folder: "/uploads/latest-news"
+  - name: mediaCoverage
+    label: "Media Coverage"
+    folder: "src/content/media-coverage"
+    create: true
+    i18n:
+      structure: multiple_folders
+    sortable_fields:
+      - date
+      - title
+    summary: "{{fields.date}} - {{fields.title}}"
+    fields:
+      - label: "Type"
+        name: type
+        widget: hidden
+        default: "media-coverage"
+        i18n: duplicate
+      - label: "Title"
+        name: title
+        widget: string
+        i18n: true
+      - label: "Platform"
+        name: platform
+        widget: string
+        i18n: duplicate
+      - label: "Date"
+        name: date
+        widget: datetime
+        format: "YYYY-MM-DD"
+        date_format: "YYYY-MM-DD"
+        time_format: false
+        i18n: duplicate
+      - label: "URL"
+        name: url
+        widget: string
+        i18n: duplicate
+      - label: "Image"
+        name: image
+        widget: image
+        i18n: duplicate
+        media_folder: "/static/uploads/media-coverage"
+        public_folder: "/uploads/media-coverage"

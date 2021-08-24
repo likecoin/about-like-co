@@ -1,37 +1,11 @@
 import React from "react"
+import { StaticQuery, graphql } from "gatsby"
 import cn from "classnames"
 
 import GradientText from "./GradientText"
 import MediaCoverageItem from "./MediaCoverageItem"
 
-export default function MediaCoverageSection({ className, ...props }) {
-  const items = [
-    {
-      title :"Hong Kong's Apple Daily to live on in blockchain, free of censors",
-      url: "https://reut.rs/3jKtUHD",
-      media: 'Reuters',
-      image: '/uploads/media-coverage/reuters.svg',
-    },
-    {
-      title :"Hong Kongers are using blockchain archives to fight government censorship",
-      url: "https://bit.ly/3jEsTAO",
-      media: 'Quartz',
-      image: '/uploads/media-coverage/quartz.svg',
-    },
-    {
-      title :"Hong Kong Media Turns to Blockchain to Preserve Protest Archives",
-      url: "https://bit.ly/3s408RL",
-      media: 'Decrypt',
-      image: '/uploads/media-coverage/decrypt.png',
-    },
-    {
-      title :"Hong Kongers use blockchain to save evidence of anti-authoritarian struggles",
-      url: "https://bit.ly/3iFK8m5",
-      media: 'Cointelegraph',
-      image: '/uploads/media-coverage/cointelegraph.svg',
-      backgroundColor: '#253137',
-    },
-  ]
+function MediaCoverageSection({ className, items, ...props }) {
   return (
     <section
       className={cn("flex flex-col items-center mt-[88px]", className)}
@@ -39,19 +13,54 @@ export default function MediaCoverageSection({ className, ...props }) {
     >
       <GradientText tag="h3" className="text-[32px] text-center">Media Coverage</GradientText>
       <ul className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[16px] mt-[32px]">
-        {items.map(({ title, url, media, image, backgroundColor }, i) => (
+        {items.map(({ title, url, platform, image, backgroundColor }, i) => (
           <li key={i} className="max-w-[240px]">
             <MediaCoverageItem
               className="h-full"
               title={title}
               image={image}
               url={url}
-              media={media}
+              media={platform}
               backgroundColor={backgroundColor}
             />  
           </li>
         ))}
       </ul>
     </section>
+  )
+}
+
+export default function MediaCoverageSectionWithData(props) {
+  return (
+    <StaticQuery
+      query={graphql`
+        query MediaCoverageQuery {
+          items: allMarkdownRemark(
+            filter: {
+              fileAbsolutePath: { regex: "//en//" }
+              frontmatter: { type: { eq: "media-coverage" } }
+            }
+            sort: { fields: frontmatter___date, order: DESC }
+          ) {
+            edges {
+              node {
+                frontmatter {
+                  title
+                  image
+                  url
+                  platform
+                }
+              }
+            }
+          }
+        }
+      `}
+      render={data => (
+        <MediaCoverageSection
+          items={data.items.edges.map(({ node }) => node.frontmatter)}
+          {...props}
+        />
+      )}
+    />
   )
 }
