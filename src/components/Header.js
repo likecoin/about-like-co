@@ -58,7 +58,7 @@ export default function Header() {
       title: "Governance",
       items: [
         {
-          title: "Lunie",
+          title: "Staking",
           url: "https://stake.like.co",
         },
         {
