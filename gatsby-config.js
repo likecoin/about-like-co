@@ -9,7 +9,12 @@ module.exports = {
     twitterUsername: "@likecoin",
   },
   plugins: [
-    "gatsby-plugin-netlify-cms",
+    {
+      resolve: `gatsby-plugin-netlify-cms`,
+      options: {
+        modulePath: `${__dirname}/src/cms/index.js`,
+      },
+    },
     // {
     //   resolve: "gatsby-plugin-google-analytics",
     //   options: {
