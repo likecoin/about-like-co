@@ -32,17 +32,17 @@ export default function AwardsPartnersSection({ className, ...props }) {
     },
     {
       title :"IPFS",
-      url: "",
+      url: "https://bit.ly/3gw6aWy",
       key: "ipfs",
     },
     {
       title :"Arweave",
-      url: "",
+      url: "https://www.arweave.org",
       key: "arweave",
     },
     {
-      title :"AppWorks",
-      url: "",
+      title :"AppWorks Demo Day #18",
+      url: "https://appworks.tw/accelerator",
       key: "appworks",
     },
   ].map(({ key, ...item }) => ({ ...item, key, image: `/uploads/awards-partners/${key}.svg`}))
