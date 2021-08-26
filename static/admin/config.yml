@@ -20,6 +20,19 @@ i18n:
   locales: [en, zh]
   default_locale: en
 collections:
+  - name: site
+    label: "Site Settings"
+    i18n: true
+    files:
+      - name: menu
+        label: "Menu"
+        file: "/src/content/menu.md"
+        fields:
+          - name: headerMenuItems
+            label: "Header Menu Items"
+            widget: code
+            default_language: "json"
+            i18n: true
   - name: news
     label: "News"
     folder: "src/content/news"

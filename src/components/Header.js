@@ -1,5 +1,6 @@
 import React, { Fragment } from "react"
 import { Disclosure, Menu, Transition } from "@headlessui/react"
+import { StaticQuery, graphql } from "gatsby"
 import cn from "classnames"
 import { Link } from "gatsby"
 
@@ -11,87 +12,23 @@ import ClapIcon from "./icons/Clap"
 import ISCNIcon from "./icons/ISCN"
 import ArrowRight from "./icons/ArrowRight"
 
-export default function Header() {
-  const menuItems = [
-    {
-      title: "Apps",
-      items: [
-        {
-          title: "ISCN App",
-          url: "https://app.like.co",
-          prepend: <ISCNIcon className="mr-[8px]" />,
-        },
-        {
-          title: "Liker Land",
-          url: "https://liker.land",
-          prepend: <ClapIcon className="mr-[8px]" />,
-        },
-        {
-          title: "More",
-          to: "/apps",
-          append: <ArrowRight className="ml-[8px]" />,
-        },
-      ],
-    },
-    {
-      title: "Developer",
-      items: [
-        {
-          title: "Documentation",
-          url: "https://docs.like.co/developer/introduction",
-        },
-        {
-          title: "GitHub",
-          url: "https://github.com/likecoin",
-        },
-        {
-          title: "LikeCoin Grants",
-          url: "https://likecoingrants.notion.site/likecoingrants/MainPage-32d790bb3d3b4b6ea9832dc0fe8bda62",
-        },
-        {
-          title: "ISCN Spec",
-          url: "https://iscn.io",
-        },
-      ],
-    },
-    {
-      title: "Governance",
-      items: [
-        {
-          title: "Staking",
-          url: "https://stake.like.co",
-        },
-        {
-          title: "Documentation",
-          url: "https://docs.like.co/general-guides/governance/liquid-democracy",
-        },
-      ],
-    },
-    {
-      title: "Community",
-      items: [
-        {
-          title: "Discord",
-          url: "https://discord.gg/W4DQ6peZZZ",
-        },
-        {
-          title: "Twitter",
-          url: "https://twitter.com/likecoin",
-        },
-        {
-          title: "Community Call",
-          url: "https://docs.like.co/general-guides/governance/community-call",
-        },
-      ],
-    },
-    {
-      title: "ISCN App",
-      url: "https://app.like.co",
-    },
-  ]
+function MenuItemIcon({ type, ...props }) {
+  switch (type) {
+    case 'iscn':
+      return <ISCNIcon {...props} />
+    case 'clap':
+      return <ClapIcon {...props} />
+    default:
+      return null
+  }
+}
 
+export function Header({ items = [], ...props }) {
   return (
-    <header className="absolute z-10 inset-x-0 top-0 flex items-center justify-between px-[32px] py-[24px]">
+    <header
+      className="absolute z-10 inset-x-0 top-0 flex items-center justify-between px-[32px] py-[24px]"
+      {...props}
+    >
       <Link className="transition transition-opacity hover:opacity-90 active:opacity-50" to="/">
         <Logo />
       </Link>
@@ -99,7 +36,7 @@ export default function Header() {
       {/* Desktop Menu */}
       <nav className="hidden lg:block">
         <ul className="grid grid-flow-col-dense gap-x-[16px]">
-          {menuItems.map((topLevelItem) => {
+          {items.map((topLevelItem) => {
             if (topLevelItem.items) {
               const secondLevelItems = [];
               topLevelItem.items.forEach((secondLevelItem, index) => {
@@ -110,9 +47,14 @@ export default function Header() {
                 }
                 const title = (
                   <Fragment>
-                    {secondLevelItem.prepend}
+                    <MenuItemIcon
+                      className="mr-[8px]"
+                      type={secondLevelItem.icon}
+                    />
                     {secondLevelItem.title}
-                    {secondLevelItem.append}
+                    {secondLevelItem.to && (
+                      <ArrowRight className="ml-[8px]" />
+                    )}
                   </Fragment>
                 )
                 secondLevelItems.push(
@@ -215,7 +157,7 @@ export default function Header() {
           <Menu.Items className="absolute inset-x-0 z-10 w-screen mt-[24px] px-[32px] outline-none">
             {() => {
               const topLevelItems = [];
-              menuItems.forEach((topLevelItem, index) => {
+              items.forEach((topLevelItem, index) => {
                 if (index > 0) {
                   topLevelItems.push(
                     <Divider key={`divider-${index}`} className="my-[16px]" />
@@ -226,9 +168,14 @@ export default function Header() {
                     (secondLevelItem) => {
                       const title = (
                         <Fragment>
-                          {secondLevelItem.prepend}
+                          <MenuItemIcon
+                            className="mr-[8px]"
+                            type={secondLevelItem.icon}
+                          />
                           {secondLevelItem.title}
-                          {secondLevelItem.append}
+                          {secondLevelItem.to && (
+                            <ArrowRight className="ml-[8px]" />
+                          )}
                         </Fragment>
                       )
                       return (
@@ -315,5 +262,35 @@ export default function Header() {
         </Transition>
       </Menu>
     </header>
+  )
+}
+
+export default function HeaderWithData(props) {
+  return (
+    <StaticQuery
+      query={graphql`
+        query MenuQuery {
+          menu: markdownRemark(fileAbsolutePath: {regex: "/src/content/menu.md$/"}) {
+            frontmatter {
+              en {
+                headerMenuItems {
+                  code
+                }
+              }
+            }
+          }
+        }
+      `}
+      render={data => {
+        const { headerMenuItems: { code: headerMenuItemsCode } } = data.menu.frontmatter.en
+        const headerMenuItems = JSON.parse(headerMenuItemsCode) 
+        return (
+          <Header
+            items={headerMenuItems}
+            {...props}
+          />
+        )
+      }}
+    />
   )
 }

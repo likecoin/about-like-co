@@ -10,6 +10,12 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        icon: "src/images/icon.png",
+      },
+    },
+    {
       resolve: `gatsby-plugin-netlify-cms`,
       options: {
         modulePath: `${__dirname}/src/cms/index.js`,
@@ -23,12 +29,6 @@ module.exports = {
     // },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
-    {
-      resolve: "gatsby-plugin-manifest",
-      options: {
-        icon: "src/images/icon.png",
-      },
-    },
     {
       resolve: "gatsby-source-filesystem",
       options: {
