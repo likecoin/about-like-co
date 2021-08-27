@@ -21,12 +21,12 @@ module.exports = {
         modulePath: `${__dirname}/src/cms/index.js`,
       },
     },
-    // {
-    //   resolve: "gatsby-plugin-google-analytics",
-    //   options: {
-    //     trackingId: "",
-    //   },
-    // },
+    {
+      resolve: "gatsby-plugin-google-analytics",
+      options: {
+        trackingId: "UA-72702567-14",
+      },
+    },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     {
