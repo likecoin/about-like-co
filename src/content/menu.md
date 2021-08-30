@@ -75,8 +75,14 @@ en:
           ]
         },
         {
+          "title": "Get Token",
+          "url": "https://app.liquid.com/quick-exchange",
+          "preset": "outlined"
+        },
+        {
           "title": "ISCN App",
-          "url": "https://app.like.co"
+          "url": "https://app.like.co",
+          "preset": "filled"
         }
       ]
 zh:
@@ -155,8 +161,14 @@ zh:
           ]
         },
         {
+          "title": "Get Token",
+          "url": "https://app.liquid.com/quick-exchange",
+          "preset": "outlined"
+        },
+        {
           "title": "ISCN App",
-          "url": "https://app.like.co"
+          "url": "https://app.like.co",
+          "preset": "filled"
         }
       ]
 ---

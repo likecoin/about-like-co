@@ -118,7 +118,7 @@ export function Header({ items = [], ...props }) {
               <li key={topLevelItem.title}>
                 {topLevelItem.url ? (
                   <Button
-                    preset="filled"
+                    preset={topLevelItem.preset}
                     href={topLevelItem.url}
                     target="_blank"
                     rel="noreferrer"
@@ -127,7 +127,10 @@ export function Header({ items = [], ...props }) {
                   </Button>
                 ) : (
                   <Link to={topLevelItem.to}>
-                    <Button preset="filled" isNoPadding>
+                    <Button
+                      preset={topLevelItem.preset}
+                      isNoPadding
+                    >
                       {topLevelItem.title}
                     </Button>
                   </Link>
@@ -241,7 +244,8 @@ export function Header({ items = [], ...props }) {
                   topLevelItems.push(
                     <Menu.Item key={topLevelItem.title} as={Fragment}>
                       <Button
-                        preset="filled"
+                        preset={topLevelItem.preset}
+                        theme="light"
                         href={topLevelItem.url}
                         target="_blank"
                         rel="noreferrer"
