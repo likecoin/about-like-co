@@ -21,6 +21,23 @@ const SEO = ({ title, description, image, isArticle }) => {
     image: `${url}${image || defaultImage}`,
     url: `${url}${pathname}`,
   }
+  const organizationData = {
+    '@context': 'http://www.schema.org',
+    '@type': 'Organization',
+    name: 'LikeCoin Foundation',
+    url: 'https://like.co',
+    logo: 'https://like.co/logo.png',
+    sameAs: [
+      'https://discord.com/invite/W4DQ6peZZZ',
+      'https://t.me/likecoin',
+      'https://matters.news/@likecoin',
+      'https://medium.com/likecoin',
+      'https://github.com/likecoin',
+      'https://twitter.com/likecoin',
+      'https://www.youtube.com/c/LikeCoin',
+      'https://www.facebook.com/Liker.Land',
+    ],
+  }
   return (
     <Helmet
       defaultTitle={defaultTitle}
@@ -46,6 +63,9 @@ const SEO = ({ title, description, image, isArticle }) => {
       )}
       {seo.image && <meta name="twitter:image" content={seo.image} />}
       <link rel="stylesheet" href="https://use.typekit.net/yqg7ihd.css" />
+      <script type="application/ld+json">
+        {JSON.stringify(organizationData)}
+      </script>
     </Helmet>
   )
 }
