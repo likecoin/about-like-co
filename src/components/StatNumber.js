@@ -22,7 +22,7 @@ export default function StatNumber({
         onChange={handleVisibilityChange}
       >
         {({ isVisible: isShow }) =>
-          <div className="text-[56px] min-h-[84px] font-bold font-display text-white">
+          <div className="text-[36px] sm:text-[56px] min-h-[54px] sm:min-h-[84px] font-bold font-display text-white">
             {isShow || hasShown
               ? (    
                 <CountUp
