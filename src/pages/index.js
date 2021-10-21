@@ -12,7 +12,7 @@ import GradientText from "../components/GradientText"
 import LatestNewsSection from "../components/LatestNewsSection"
 import Layout from "../components/Layout"
 import MediaCoverageSection from "../components/MediaCoverageSection"
-import StatNumber from "../components/StatNumber"
+import StatisticSection from "../components/StatisticSection"
 import WhatDepubOfferItem from "../components/WhatDepubOfferItem"
 
 const IndexPage = () => {
@@ -90,31 +90,7 @@ const IndexPage = () => {
       </section>
 
       {/* Statistic Section */}
-      <section className="relative mt-[88px] flex justify-center">
-        <ul className="grid xl:grid-flow-col-dense auto-cols-auto gap-x-[96px] gap-y-[48px]">
-          <li>
-            <StatNumber
-              value="560,000"
-              label="published contents"
-              withPlus={true}
-            />
-          </li>
-          <li>
-            <StatNumber
-              value="18,600"
-              label="creators"
-              withPlus={true}
-            />
-          </li>
-          <li>
-            <StatNumber
-              value="107,000"
-              label="wallets"
-              withPlus={true}
-            />
-          </li>
-        </ul>
-      </section>
+      <StatisticSection />
 
       {/* What depub offers Section */}
       <section className="relative flex mt-[88px]">
