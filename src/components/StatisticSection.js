@@ -31,7 +31,7 @@ export default function StatisticSection() {
   }, [])
   return (
     <section className="relative mt-[88px] px-[48px] flex justify-center">
-      <ul className="sm:w-full max-w-[1280px] min-w-[224px] grid md:grid-cols-2 lg:grid-cols-3 gap-x-[96px] gap-y-[48px]">
+      <ul className="sm:w-full max-w-[768px] min-w-[224px] grid md:grid-cols-2 gap-x-[96px] gap-y-[48px]">
         <li>
           <StatNumber
             value={24000}
