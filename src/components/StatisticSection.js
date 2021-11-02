@@ -4,7 +4,8 @@ import StatNumber from "./StatNumber"
 
 export default function StatisticSection() {
   const [registeredContents, setRegisteredContents] = React.useState(0)
-  const [sitesWithLikeButton, setSitesWithLikeButton] = React.useState(0)
+  const [walletsCount, setWalletsCount] = React.useState(0)
+  const [integratedSites, setIntegratedSites] = React.useState(0)
   const [creatorsCount, setCreatorsCount] = React.useState(0)
   const [likeDistribution, setLikeDistribution] = React.useState(0)
   React.useEffect(() => {
@@ -15,7 +16,8 @@ export default function StatisticSection() {
           {
             totalLikee: creatorsCountRaw = 0,
             LIKEs: likeDistributionRaw = 0,
-            totalSites: sitesWithLikeButtonRaw = 0,
+            totalAddresses: walletsCountRaw = 0,
+            totalSites: integratedSitesRaw = 0,
           },
         ] = await Promise.all([
           fetch(
@@ -26,7 +28,8 @@ export default function StatisticSection() {
         setRegisteredContents(registeredContentsRaw)
         setCreatorsCount(creatorsCountRaw)
         setLikeDistribution(likeDistributionRaw)
-        setSitesWithLikeButton(sitesWithLikeButtonRaw);
+        setWalletsCount(walletsCountRaw)
+        setIntegratedSites(integratedSitesRaw);
       } catch (error) {
         console.error("Failed to fetch stat number")
         console.error(error)
@@ -39,13 +42,15 @@ export default function StatisticSection() {
       <div>
         <ul className="my-14 sm:w-full max-w-[768px] min-w-[224px]  gap-x-[96px] gap-y-[48px] grid md:grid-cols-3">
           <li>
-            <StatNumber value={24000} label="Addresses" withPlus={true} />
+            <StatNumber
+              value={walletsCount || 24000}
+              label="Addresses"
+            />
           </li>
           <li>
             <StatNumber
-              value={sitesWithLikeButton || 7000}
+              value={integratedSites || 7000}
               label="Sites"
-              withPlus={true}
             />
           </li>
           <li>
@@ -57,7 +62,10 @@ export default function StatisticSection() {
         </ul>
         <ul className="sm:w-full max-w-[768px] min-w-[224px]  gap-x-[96px] gap-y-[48px] grid md:grid-cols-2 place-items-center">
           <li>
-            <StatNumber value={creatorsCount || 19000} label="Creators" />
+            <StatNumber
+              value={creatorsCount || 19000}
+              label="Creators"
+            />
           </li>
           <li>
             <StatNumber
