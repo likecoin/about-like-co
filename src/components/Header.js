@@ -29,7 +29,7 @@ export function Header({ items = [], ...props }) {
       className="absolute z-10 inset-x-0 top-0 flex items-center justify-between px-[32px] py-[24px]"
       {...props}
     >
-      <Link className="transition transition-opacity hover:opacity-90 active:opacity-50" to="/">
+      <Link className="transition-opacity hover:opacity-90 active:opacity-50" to="/">
         <Logo />
       </Link>
 
@@ -61,7 +61,7 @@ export function Header({ items = [], ...props }) {
                   <Menu.Item key={secondLevelItem.title} as="div">
                     {secondLevelItem.url ? (
                       <Button
-                        className="flex items-center"
+                        className={secondLevelItem.preset ? "flex items-center text-[14px] font-light" : "flex items-center"}
                         preset="white"
                         theme="light"
                         href={secondLevelItem.url}
@@ -74,7 +74,7 @@ export function Header({ items = [], ...props }) {
                     ) : (
                       <Link to={secondLevelItem.to}>
                         <Button
-                          className="flex items-center"
+                          className="flex items-center font-normal"
                           preset="white"
                           theme="light"
                           isNoPadding
@@ -93,11 +93,22 @@ export function Header({ items = [], ...props }) {
                   className="relative inline-block text-left"
                   as="li"
                 >
-                  <Menu.Button as={Fragment}>
-                    <Button className="flex items-center" preset="white">
-                      {topLevelItem.title} <ArrowDown className="ml-[8px]" />
-                    </Button>
-                  </Menu.Button>
+                  {topLevelItem.preset ? (
+                    <Menu.Button as={Fragment}>
+                      <Button
+                        className="flex items-center"
+                        preset={topLevelItem.preset}
+                      >
+                        {topLevelItem.title}
+                      </Button>
+                    </Menu.Button>
+                  ) : (
+                    <Menu.Button as={Fragment}>
+                      <Button className="flex items-center" preset="white">
+                        {topLevelItem.title} <ArrowDown className="ml-[8px]" />
+                      </Button>
+                    </Menu.Button>
+                  )}
                   <Transition
                     as={Fragment}
                     enter="transition ease-out duration-100"
@@ -188,7 +199,7 @@ export function Header({ items = [], ...props }) {
                         >
                           {secondLevelItem.url ? (
                             <Button
-                              className="flex items-center"
+                              className={secondLevelItem.preset ? "flex items-center text-[14px] font-normal" : "flex items-center"}
                               preset="white"
                               theme="light"
                               href={secondLevelItem.url}
@@ -218,19 +229,29 @@ export function Header({ items = [], ...props }) {
                         return (
                           <>
                             <Disclosure.Button as={Fragment}>
-                              <Button
-                                className="flex items-center justify-between"
-                                preset="white"
-                                theme="light"
-                                isNoPadding
-                              >
-                                {topLevelItem.title}
-                                <ArrowDown
-                                  className={cn("ml-[8px]", {
-                                    "transform rotate-180": open,
-                                  })}
-                                />
-                              </Button>
+                              {topLevelItem.preset ? (
+                                <Button
+                                  className="flex items-center justify-center w-full"
+                                  preset="outlined"
+                                  theme="light"
+                                >
+                                  {topLevelItem.title}
+                                </Button>
+                              ) : (
+                                <Button
+                                  className="flex items-center justify-between"
+                                  preset="white"
+                                  theme="light"
+                                  isNoPadding
+                                >
+                                  {topLevelItem.title}
+                                  <ArrowDown
+                                    className={cn("ml-[8px]", {
+                                      "transform rotate-180": open,
+                                    })}
+                                  />
+                                </Button>
+                              )}
                             </Disclosure.Button>
                             <Disclosure.Panel className="pl-[24px] pt-[16px]">
                               {secondLevelItems}

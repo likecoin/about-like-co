@@ -76,8 +76,22 @@ en:
         },
         {
           "title": "Get Token",
-          "url": "https://app.liquid.com/quick-exchange",
-          "preset": "outlined"
+          "preset": "outlined",
+          "items": [
+            {
+              "title": "Osmosis",
+              "url": "https://app.osmosis.zone/"
+            },
+            {
+              "title": "Liquid",
+              "url": "https://app.liquid.com/exchange/LIKEUSDT"
+            },
+            {
+              "title": "How to trade?",
+              "preset": "normal",
+              "url": "https://docs.like.co/general-guides/trade"
+            }
+          ]
         },
         {
           "title": "ISCN App",
@@ -162,8 +176,22 @@ zh:
         },
         {
           "title": "Get Token",
-          "url": "https://app.liquid.com/quick-exchange",
-          "preset": "outlined"
+          "preset": "outlined",
+          "items": [
+            {
+              "title": "Osmosis",
+              "url": "https://app.osmosis.zone/"
+            },
+            {
+              "title": "Liquid",
+              "url": "https://app.liquid.com/exchange/LIKEUSDT"
+            },
+            {
+              "title": "How to trade?",
+              "preset": "normal",
+              "url": "https://docs.like.co/v/zh/guides/trade/trade-in-osmosis"
+            }
+          ]
         },
         {
           "title": "ISCN App",
