@@ -11,20 +11,13 @@ export default function StatisticSection() {
   React.useEffect(() => {
     async function fetchData() {
       try {
-        const [
-          { total_count: registeredContentsRaw = 0 },
-          {
-            totalLikee: creatorsCountRaw = 0,
-            LIKEs: likeDistributionRaw = 0,
-            totalAddresses: walletsCountRaw = 0,
-            totalSites: integratedSitesRaw = 0,
-          },
-        ] = await Promise.all([
-          fetch(
-            "https://mainnet-node.like.co/txs?message.module=iscn&limit=1"
-          ).then((r) => r.json()),
-          fetch("https://like.co/api/like/like/stat").then((r) => r.json()),
-        ]);
+        const {
+          totalISCNCount: registeredContentsRaw = 0,
+          totalLikee: creatorsCountRaw = 0,
+          LIKEs: likeDistributionRaw = 0,
+          totalAddresses: walletsCountRaw = 0,
+          totalSites: integratedSitesRaw = 0,
+        } = await fetch("https://like.co/api/like/like/stat").then((r) => r.json())
         setRegisteredContents(registeredContentsRaw)
         setCreatorsCount(creatorsCountRaw)
         setLikeDistribution(likeDistributionRaw)
