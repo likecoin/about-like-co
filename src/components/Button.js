@@ -10,7 +10,7 @@ function getPresetClassName({ preset, theme }) {
         'active:text-opacity-50',
         theme === 'dark'
           ? 'text-like-cyan-light border-like-cyan-light'
-          : 'text-dark-gray border-dark-gray'
+          : 'text-dark-gray border-medium-gray'
       )
     case 'filled':
       return 'text-like-green border-[2px] border-like-cyan-light bg-like-cyan-light hover:bg-opacity-70 active:bg-opacity-50'
@@ -19,6 +19,8 @@ function getPresetClassName({ preset, theme }) {
       return cn(theme === 'dark' ? 'text-white' : 'text-dark-gray', 'hover:text-like-cyan')
     case 'plain':
       return 'text-like-cyan-light hover:text-opacity-70 active:text-opacity-50'
+    case 'disabled':
+    return 'text-medium-gray border-[2px] border-medium-gray bg-shade-gray pointer-events-none '
   }
 }
 

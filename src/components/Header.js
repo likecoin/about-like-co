@@ -29,7 +29,7 @@ export function Header({ items = [], ...props }) {
       className="absolute z-10 inset-x-0 top-0 flex items-center justify-between px-[32px] py-[24px]"
       {...props}
     >
-      <Link className="transition transition-opacity hover:opacity-90 active:opacity-50" to="/">
+      <Link className="transition-opacity hover:opacity-90 active:opacity-50" to="/">
         <Logo />
       </Link>
 
