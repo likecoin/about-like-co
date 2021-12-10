@@ -49,6 +49,32 @@ const IndexPage = () => {
         </div>
       </section>
 
+      {/* AirDrop preLaunch */}
+      <section className="relative">
+      <div className="flex relative items-center mx-auto w-[1100px] bg-white border-[3px] border-airdrop-gold rounded-[24px] mt-[116px] p-[56px] overflow-hidden">
+        <img className="absolute top-0 left-0 object-cover w-full h-full" src="/uploads/airdrop/background-sm.png" />
+        <img className="absolute top-0 left-0 object-cover w-full h-full" src="/uploads/airdrop/background-planets.png" />
+        <div className="z-10">
+          <img className="block w-[353px] h-[56px] mb-[8px]" src="/uploads/airdrop/title-likecoin.png" />
+          <p className=" text-[20px] text-dark-gray">An airdrop targeted Cosmos, Osmosis and Civic Likers is coming on its way, subscribe to get update</p>
+        </div>
+        <div className="flex-shrink-0 ml-[12px] z-10">
+          <Button
+            className="flex items-center font-normal border-airdrop-gold"
+            preset="outlined"
+            href="https://app.like.co/"
+            target="_blank"
+            rel="referrer"
+          >
+            <img className="mr-[12px]" src="/uploads/airdrop/claim.svg" />
+            <p className="whitespace-nowrap text-airdrop-gold text-[16px]">Claim Airdrop</p>
+            <img className="ml-[12px]" src="/uploads/airdrop/arrowright.svg" />
+          </Button>
+        </div>
+      </div>
+      <img className="absolute top-[-50px] left-[30%] w-[244px]" src="/uploads/airdrop/background-planet.png" />
+      </section>
+      
       {/* Sub-Nav Section */}
       <section className="relative mt-[88px]">
         <nav className="flex justify-center">
