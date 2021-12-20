@@ -179,9 +179,9 @@ const IndexPage = () => {
         <Button
           className="mt-[32px]"
           preset="filled"
-          href="https://likecoin.substack.com"
+          href="https://twitter.com/likecoin"
           target="_blank"
-        >Subscribe Newsletter</Button>
+        >Follow us on Twitter</Button>
       </section>
     </Layout>
   )
