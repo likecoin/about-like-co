@@ -51,27 +51,27 @@ const IndexPage = () => {
 
       {/* AirDrop preLaunch */}
       <section className="relative flex justify-center">
-      <div className="flex flex-col p-[16px] md:flex-row md:p-[56px] justify-between relative items-center mx-[16px] max-w-[1100px] bg-white border-[3px] border-airdrop-gold rounded-[24px] mt-[116px] overflow-hidden">
-        <img className="absolute top-0 left-0 object-cover w-full h-full" src="/uploads/airdrop/background-sm.png" />
-        <img className="absolute top-0 left-0 object-cover w-full h-full" src="/uploads/airdrop/background-planets.png" />
-        <div className="z-10 mb-[24px] md:mr-[24px] md:mb-0">
-          <img className="block w-[353px] h-[56px] mb-[8px]" src="/uploads/airdrop/title-likecoin.png" />
-          <p className=" text-[20px] text-dark-gray">LikeCoin airdrop is coming. Check out the amount you can claim now!</p>
+        <div className="flex flex-col p-[16px] md:flex-row md:p-[56px] justify-between relative items-center mx-[16px] max-w-[1100px] bg-white border-[3px] border-airdrop-gold rounded-[24px] mt-[116px] overflow-hidden">
+          <img className="absolute top-0 left-0 object-cover w-full h-full" src="/uploads/airdrop/background-sm.png" />
+          <img className="absolute top-0 left-0 object-cover w-full h-full" src="/uploads/airdrop/background-planets.png" />
+          <div className="z-10 mb-[24px] md:mr-[24px] md:mb-0">
+            <img className="block w-[353px] h-[56px] mb-[8px]" src="/uploads/airdrop/title-likecoin.png" />
+            <p className=" text-[20px] text-dark-gray">LikeCoin airdrop is coming. Check out the amount you can claim now!</p>
+          </div>
+          <div className="flex-shrink-0 ml-[12px] z-10">
+            <Button
+              className="flex items-center font-normal border-airdrop-gold"
+              preset="outlined"
+              href="https://app.like.co/airdrop"
+              target="_blank"
+              rel="referrer"
+            >
+              <img className="mr-[12px]" src="/uploads/airdrop/claim.svg" />
+              <p className="whitespace-nowrap text-airdrop-gold text-[16px]">Claim Airdrop</p>
+              <img className="ml-[12px]" src="/uploads/airdrop/arrowright.svg" />
+            </Button>
+          </div>
         </div>
-        <div className="flex-shrink-0 ml-[12px] z-10">
-          <Button
-            className="flex items-center font-normal border-airdrop-gold"
-            preset="outlined"
-            href="https://app.like.co/airdrop"
-            target="_blank"
-            rel="referrer"
-          >
-            <img className="mr-[12px]" src="/uploads/airdrop/claim.svg" />
-            <p className="whitespace-nowrap text-airdrop-gold text-[16px]">Claim Airdrop</p>
-            <img className="ml-[12px]" src="/uploads/airdrop/arrowright.svg" />
-          </Button>
-        </div>
-      </div>
       <img className="absolute top-[50px] left-[38%] w-[244px]" src="/uploads/airdrop/background-planet.png" />
       </section>
       
