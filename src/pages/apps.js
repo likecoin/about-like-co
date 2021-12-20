@@ -62,7 +62,7 @@ const AppsPage = () => {
     {
       image: '/uploads/exchanges/emeris.svg',
       title: "Emeris",
-      url: "https://emeris.com/",
+      url: "https://app.emeris.com/asset/nanolike",
       isOfficial: true,
       description: 'Cross-chain Defi portal. Integrated with the Gravity DEX protocol on the Cosmos Hub. Easily swap between LIKE and other cross-chain assets.',
     },

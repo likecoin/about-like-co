@@ -83,6 +83,10 @@ en:
               "url": "https://app.osmosis.zone/"
             },
             {
+              "title": "Emeris",
+              "url": "https://app.emeris.com/asset/nanolike"
+            },
+            {
               "title": "Liquid",
               "url": "https://app.liquid.com/exchange/LIKEUSDT"
             },

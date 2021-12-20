@@ -19,6 +19,7 @@ module.exports = {
       'medium-gray': '#9B9B9B',
       'shade-gray': '#EBEBEB',
       'light-gray': '#F7F7F7',
+      'airdrop-gold':'#D1AB79',
     },
     fontFamily: {
       'display': 'proxima-nova, sans-serif',
