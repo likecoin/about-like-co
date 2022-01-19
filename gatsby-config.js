@@ -4,7 +4,7 @@ module.exports = {
     title: "LikeCoin",
     titleTemplate: "%s | LikeCoin",
     description:
-      "Decentralized Publishing - Digital evidence can now be secured, validated, and made readily available in perpetuity with #DePub.",
+      "Decentralize Publishing. Own your content forever.",
     image: "/og.png",
     twitterUsername: "@likecoin",
   },
