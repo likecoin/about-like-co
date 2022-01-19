@@ -145,8 +145,8 @@ const IndexPage = () => {
               </WhatDepubOfferItem>
             </li>
             <li>
-              <WhatDepubOfferItem title="Ready tools for Web3 native content">
-                A flexible decentralized publication framework (ISCN) that can retrieve data via API, integrate with existing media platforms, and connect with other blockchains. Dapps can easily build integrated tools for creators to produce, manage and own web3 native content. 
+              <WhatDepubOfferItem title="Publication Tools for Web 3 content">
+                LikeCoin’s decentralized publication framework <a className="underline" href="https://docs.like.co/">(ISCN)</a> can easily integrate with existing media platforms and connect with other blockchains. Ready-to-use tools for creators to produce, manage and own web 3 native content.
               </WhatDepubOfferItem>
             </li>
           </ul>
