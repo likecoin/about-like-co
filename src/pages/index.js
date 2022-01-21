@@ -140,7 +140,7 @@ const IndexPage = () => {
               </WhatDepubOfferItem>
             </li>
             <li>
-              <WhatDepubOfferItem title="LikerDAO">
+              <WhatDepubOfferItem title="LikeCoin DAO">
                 LikeCoin is a community-owned network where LIKE holders make decisions collectively via liquid democracy. Anyone can publish content, build applications and participate in governance.
               </WhatDepubOfferItem>
             </li>
