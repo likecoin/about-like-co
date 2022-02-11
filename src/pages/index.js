@@ -132,7 +132,7 @@ const IndexPage = () => {
         </div>
         <div className="relative flex flex-col justify-center flex-grow md:max-w-[66%] p-[24px]">
           <GradientText tag="h2" className="text-[48px] text-center md:text-left">What DePub offers</GradientText>
-          <p className="mt-[24px] text-like-cyan-vlight text-[20px]">LikeCoin is a cross-chain protocol and framework for decentralized publishing. It is an application-specific blockchain for building and bridging media to Web 3. </p>
+          <p className="mt-[24px] text-like-cyan-vlight text-[20px]">LikeCoin is a inter-chain protocol and framework for decentralized publishing. It is an application-specific blockchain for building and bridging media to Web 3. </p>
           <ul className="grid md:grid-cols-2	gap-x-[32px] gap-y-[48px] mt-[48px]">
             <li>
               <WhatDepubOfferItem title="Not your key, not your content">
