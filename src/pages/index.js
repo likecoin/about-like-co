@@ -56,7 +56,7 @@ const IndexPage = () => {
           <img className="absolute top-0 left-0 object-cover w-full h-full" src="/uploads/airdrop/background-planets.png" />
           <div className="z-10 mb-[24px] md:mr-[24px] md:mb-0">
             <img className="block w-full h-full max-w-[353px] max-h-[56px] object-contain mb-[8px]" src="/uploads/airdrop/title-likecoin.png" alt="airdrop" />
-            <p className=" text-[20px] text-dark-gray">LikeCoin airdrop is coming. Check out the amount you can claim now!</p>
+            <p className=" text-[20px] text-dark-gray">LIKE is NOW available for claiming.<br/>If you are ATOM/OSMO holders or Civic Liker before 2021.11.30, you can claim LIKE and participate in LikeCoin governance.</p>
           </div>
           <div className="flex-shrink-0 ml-[12px] z-10">
             <Button
