@@ -55,7 +55,7 @@ const AppsPage = () => {
     {
       image: '/uploads/exchanges/osmosis.svg',
       title: "Osmosis",
-      url: "https://app.osmosis.zone/",
+      url: "https://app.osmosis.zone/?from=UST&to=LIKE",
       isOfficial: true,
       description: 'Cosmos-based DEX & AMM protocol that designed for cross-chain assets. Easily swap between LIKE and other cross-chain assets.',
     },

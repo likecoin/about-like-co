@@ -80,7 +80,7 @@ en:
           "items": [
             {
               "title": "Osmosis",
-              "url": "https://app.osmosis.zone/"
+              "url": "https://app.osmosis.zone/?from=UST&to=LIKE"
             },
             {
               "title": "Emeris",
@@ -184,7 +184,7 @@ zh:
           "items": [
             {
               "title": "Osmosis",
-              "url": "https://app.osmosis.zone/"
+              "url": "https://app.osmosis.zone/?from=UST&to=LIKE"
             },
             {
               "title": "Liquid",
