@@ -8,16 +8,16 @@ import Logo from "./Logo"
 import Button from "./Button"
 import ArrowDown from "./icons/ArrowDown"
 import Divider from "./Divider"
-import ClapIcon from "./icons/Clap"
 import ISCNIcon from "./icons/ISCN"
+import DepubIcon from "./icons/DepubSpace"
 import ArrowRight from "./icons/ArrowRight"
 
 function MenuItemIcon({ type, ...props }) {
   switch (type) {
     case 'iscn':
       return <ISCNIcon {...props} />
-    case 'clap':
-      return <ClapIcon {...props} />
+    case 'depub':
+      return <DepubIcon {...props} />
     default:
       return null
   }
