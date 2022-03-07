@@ -13,9 +13,9 @@ en:
               "icon": "iscn"
             },
             {
-              "title": "Liker Land",
-              "url": "https://liker.land",
-              "icon": "clap"
+              "title": "depub.Space",
+              "url": "https://depub.space/",
+              "icon": "depub"
             },
             {
               "title": "More",
