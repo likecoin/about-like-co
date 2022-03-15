@@ -79,6 +79,10 @@ en:
           "preset": "outlined",
           "items": [
             {
+              "title": "LikeCoin Faucet",
+              "url": "https://faucet.like.co/"
+            },
+            {
               "title": "Osmosis",
               "url": "https://app.osmosis.zone/?from=UST&to=LIKE"
             },
@@ -117,9 +121,9 @@ zh:
               "icon": "iscn"
             },
             {
-              "title": "Liker Land",
-              "url": "https://liker.land",
-              "icon": "clap"
+              "title": "depub.Space",
+              "url": "https://depub.space/",
+              "icon": "depub"
             },
             {
               "title": "More",
@@ -183,8 +187,16 @@ zh:
           "preset": "outlined",
           "items": [
             {
+              "title": "LikeCoin Faucet",
+              "url": "https://faucet.like.co/"
+            },
+            {
               "title": "Osmosis",
               "url": "https://app.osmosis.zone/?from=UST&to=LIKE"
+            },
+            {
+              "title": "Emeris",
+              "url": "https://app.emeris.com/asset/nanolike"
             },
             {
               "title": "Liquid",
@@ -193,7 +205,7 @@ zh:
             {
               "title": "How to trade?",
               "preset": "normal",
-              "url": "https://docs.like.co/v/zh/guides/trade/trade-in-osmosis"
+              "url": "https://docs.like.co/general-guides/trade"
             }
           ]
         },
