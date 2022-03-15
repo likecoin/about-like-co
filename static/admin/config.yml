@@ -33,6 +33,15 @@ collections:
             widget: code
             default_language: "json"
             i18n: true
+      - name: appList
+        label: "AppList"
+        file: "/src/content/appList.md"
+        fields:
+          - name: appItems
+            label: "Apps"
+            widget: code
+            default_language: "json"
+            i18n: true
   - name: news
     label: "News"
     folder: "src/content/news"
@@ -111,3 +120,4 @@ collections:
         i18n: duplicate
         media_folder: "/static/uploads/media-coverage"
         public_folder: "/uploads/media-coverage"
+        
