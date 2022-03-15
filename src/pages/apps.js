@@ -29,7 +29,7 @@ const AppsPage = () => {
       <section className="flex flex-col items-center mt-[100px] p-[24px]">
         <GradientText tag="h3" className="text-[32px] text-center">Exchanges</GradientText>
         <ul className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-x-[24px] gap-y-[40px] mt-[88px]">
-          {AppList.exchandes.map((data) => (
+          {AppList.exchanges.map((data) => (
             <li key={data.title} className="w-[268px] h-full">
               <AppItem {...data} />
             </li>
@@ -49,7 +49,7 @@ const AppsPage = () => {
       <section className="flex flex-col items-center mt-[88px] p-[24px]">
         <GradientText tag="h3" className="text-[32px] text-center">Block Explorers</GradientText>
         <ul className="grid md:grid-cols-2 lg:grid-cols-2 gap-x-[24px] gap-y-[40px] mt-[88px]">
-          {AppList.blockExplors.map((data) => (
+          {AppList.blockExplorers.map((data) => (
             <li key={data.title} className="min-w-[268px] max-w-[324px]">
               <PluginItem {...data} />
             </li>

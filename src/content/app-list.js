@@ -48,7 +48,7 @@ const apps = [
       "Decentralized data-sharing infrastructure. Integrated with LikeCoin and other web3 protocols to offer data sharing services.",
   },
 ];
-const exchandes = [
+const exchanges = [
   {
     image: "/uploads/exchanges/osmosis.svg",
     title: "Osmosis",
@@ -92,7 +92,7 @@ const wallets = [
       "The mobile app wallet for Likers. Readers can browse and reward content instantly; Creators can easily view followers' statistics, manage and stake LIKE. Wallet connect supports coming soon.",
   },
 ];
-const blockExplors = [
+const blockExplorers = [
   {
     image: "/uploads/block-explors/bigdipper.svg",
     title: "Big Dipper",
@@ -134,4 +134,4 @@ const plugins = [
   },
 ];
 
-export { apps, exchandes, wallets, blockExplors, plugins };
+export { apps, exchanges, wallets, blockExplorers, plugins };
