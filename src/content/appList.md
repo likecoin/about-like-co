@@ -37,8 +37,8 @@ en:
             },
             {
               "image": "/uploads/apps/stake-like-co.svg",
-              "title": "Stake.like.co",
-              "url": "https://stake.like.co/",
+              "title": "dao.like.co",
+              "url": "https://dao.like.co/",
               "isOfficial": false,
               "description": "The dashboard that helps you to manage, stake and vote with LIKE. Supports login with Keplr wallet, Ledger and Liker ID."
             },
@@ -179,8 +179,8 @@ zh:
             },
             {
               "image": "/uploads/apps/stake-like-co.svg",
-              "title": "Stake.like.co",
-              "url": "https://stake.like.co/",
+              "title": "dao.like.co",
+              "url": "https://dao.like.co/",
               "isOfficial": false,
               "description": "The dashboard that helps you to manage, stake and vote with LIKE. Supports login with Keplr wallet, Ledger and Liker ID."
             },

@@ -157,7 +157,7 @@ zh:
           "items": [
             {
               "title": "Staking",
-              "url": "https://stake.like.co"
+              "url": "https://dao.like.co"
             },
             {
               "title": "Documentation",
