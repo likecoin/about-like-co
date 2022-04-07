@@ -14,6 +14,7 @@ import Layout from "../components/Layout"
 import MediaCoverageSection from "../components/MediaCoverageSection"
 import StatisticSection from "../components/StatisticSection"
 import WhatDepubOfferItem from "../components/WhatDepubOfferItem"
+import CryptoWidget from "../components/CryptoWidget"
 
 const IndexPage = () => {
   const communityItems = [
@@ -181,6 +182,11 @@ const IndexPage = () => {
           target="_blank"
         >Follow us on Twitter</Button>
       </section>
+
+      <section className="w-full max-w-[880px] mx-[auto] mt-[68px] px-[16px] md:px-[42px] py-[42px] rounded-[16px]">
+        <CryptoWidget />
+      </section>
+
     </Layout>
   )
 }
