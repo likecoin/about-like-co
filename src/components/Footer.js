@@ -8,7 +8,7 @@ export default function Footer() {
         <ul className="grid grid-flow-col-dense auto-cols-auto gap-x-[8px] gap-y-[16px]">
           <li>
             <Button
-              href="https://medium.com/likecoin"
+              href="https://blog.like.co/"
               target="_blank"
               rel="noreferrer"
             >
