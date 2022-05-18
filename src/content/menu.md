@@ -84,11 +84,7 @@ en:
             },
             {
               "title": "Osmosis",
-              "url": "https://app.osmosis.zone/?from=UST&to=LIKE"
-            },
-            {
-              "title": "Emeris",
-              "url": "https://app.emeris.com/asset/nanolike"
+              "url": "https://app.osmosis.zone/?from=ATOM&to=LIKE"
             },
             {
               "title": "Liquid",
@@ -192,11 +188,7 @@ zh:
             },
             {
               "title": "Osmosis",
-              "url": "https://app.osmosis.zone/?from=UST&to=LIKE"
-            },
-            {
-              "title": "Emeris",
-              "url": "https://app.emeris.com/asset/nanolike"
+              "url": "https://app.osmosis.zone/?from=ATOM&to=LIKE"
             },
             {
               "title": "Liquid",

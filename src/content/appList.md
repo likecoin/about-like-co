@@ -57,16 +57,9 @@ en:
             {
               "image": "/uploads/exchanges/osmosis.svg",
               "title": "Osmosis",
-              "url": "https://app.osmosis.zone/?from=UST&to=LIKE",
+              "url": "https://app.osmosis.zone/?from=ATOM&to=LIKE",
               "isOfficial": true,
               "description": "Cosmos-based DEX & AMM protocol that designed for cross-chain assets. Easily swap between LIKE and other cross-chain assets."
-            },
-            {
-              "image": "/uploads/exchanges/emeris.svg",
-              "title": "Emeris",
-              "url": "https://app.emeris.com/asset/nanolike",
-              "isOfficial": true,
-              "description": "Cross-chain Defi portal. Integrated with the Gravity DEX protocol on the Cosmos Hub. Easily swap between LIKE and other cross-chain assets."
             },
             {
               "image": "/uploads/exchanges/liquid.svg",
