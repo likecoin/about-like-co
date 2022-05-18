@@ -40,7 +40,7 @@ const AppsPage = ({ items = [], ...props }) => {
         <GradientText tag="h3" className="text-[32px] text-center">
           Exchanges
         </GradientText>
-        <ul className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-x-[24px] gap-y-[40px] mt-[88px]">
+        <ul className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-x-[24px] gap-y-[40px] mt-[88px]">
           {exchanges.map((data) => (
             <li key={data.title} className="w-[268px] h-full">
               <AppItem {...data} />
