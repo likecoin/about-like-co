@@ -14,6 +14,7 @@ const SEO = ({ title, description, image, isArticle }) => {
     defaultDescription,
     defaultImage,
     twitterUsername,
+    themeColor,
   } = site.siteMetadata
   const seo = {
     title: title || defaultTitle,
@@ -46,6 +47,7 @@ const SEO = ({ title, description, image, isArticle }) => {
     >
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
+      {themeColor && <meta name="theme-color" content={themeColor} />}
       {seo.url && <meta property="og:url" content={seo.url} />}
       {(isArticle ? true : null) && <meta property="og:type" content="article" />}
       {seo.title && <meta property="og:title" content={seo.title} />}
@@ -96,6 +98,7 @@ const query = graphql`
         defaultDescription: description
         defaultImage: image
         twitterUsername
+        themeColor
       }
     }
   }
