@@ -7,6 +7,7 @@ module.exports = {
       "Decentralize Publishing. Own your content forever.",
     image: "/og.png",
     twitterUsername: "@likecoin",
+    themeColor: '#28646e',
   },
   plugins: [
     {
