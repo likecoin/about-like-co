@@ -1,0 +1,7 @@
+---
+type: news
+title: LikeCoin Update | 50 Million $LIKE airdrop starts on 2.21
+date: 2022-03-11
+url: https://blog.like.co/50-million-like-airdrop-starts-on-2-21-likecoin-updates-8c22edab8463
+image: /uploads/latest-news/1_cjnput7zbmxui5op2rfepq.png
+---
