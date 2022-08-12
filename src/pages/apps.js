@@ -17,7 +17,7 @@ const AppsPage = ({ items = [], ...props }) => {
   const plugins = items.filter((data) => data.title === "Plugins")[0].items;
 
   return (
-    <Layout className="text-like-cyan-vlight">
+    <Layout className="text-like-cyan-vlight" {...props}>
       <Seo title="Apps" />
       <section className="flex flex-col items-center mt-[100px] p-[24px]">
         <GradientText tag="h2" className="text-[48px] text-center md:text-left">
@@ -46,6 +46,11 @@ const AppsPage = ({ items = [], ...props }) => {
               <AppItem {...data} />
             </li>
           ))}
+          <li>
+            <div className="flex justify-center items-center text-dark-gray relative bg-white text-[24px] rounded-[16px] border-[2px] p-[32px] h-full border-shade-gray">
+              Coming Soon
+            </div>
+          </li>
         </ul>
       </section>
       <section className="flex flex-col items-center mt-[88px] p-[24px]">

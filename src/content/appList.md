@@ -9,17 +9,17 @@ en:
           "items": [
             {
               "image": "/uploads/apps/iscn.svg",
-              "title": "ISCN app",
+              "title": "NFT Portal",
               "url": "https://app.like.co",
               "isOfficial": true,
-              "description": "Register your content metadata and store the content in the decentralized network with the ISCN web app. ISCN helps you prepare content as NFT."
+              "description": "The NFT Portal covers all writers that cannot use WordPress plugin. Writers can copy URL of any webpage, paste it to the portal to mint the page as Writing NFT."
             },
             {
               "image": "/uploads/apps/liker-land.svg",
-              "title": "Liker Land",
+              "title": "Writing NFT - Liker Land",
               "url": "https://liker.land",
               "isOfficial": true,
-              "description": "The web app for creators and readers to browse, read and bookmark content. Civic Liker — a business tool on Liker Land for creators to run subscription services across platforms."
+              "description": "Writing NFT is the NFT of a piece of writing, literally. It can refer to articles or any type of textual content with or without illustrations."
             },
             {
               "image": "/uploads/apps/matters.svg",
@@ -60,13 +60,6 @@ en:
               "url": "https://app.osmosis.zone/?from=ATOM&to=LIKE",
               "isOfficial": true,
               "description": "Cosmos-based DEX & AMM protocol that designed for cross-chain assets. Easily swap between LIKE and other cross-chain assets."
-            },
-            {
-              "image": "/uploads/exchanges/liquid.svg",
-              "title": "Liquid",
-              "url": "https://app.liquid.com/exchange/LIKEUSDT",
-              "isOfficial": false,
-              "description": "Liquid offers various forms of digital assets trading types. Buy and sell LIKE with USD/ credit card is simple and easy."
             }
           ]
         },
@@ -86,6 +79,13 @@ en:
               "buttonTitle": "Visit",
               "url": "https://liker.land/getapp",
               "description": "The mobile app wallet for Likers. Readers can browse and reward content instantly; Creators can easily view followers' statistics, manage and stake LIKE. Wallet connect supports coming soon."
+            },
+            {
+              "image": "/uploads/wallets/cosmostation.svg",
+              "title": "Cosmostation",
+              "buttonTitle": "Visit",
+              "url": "https://cosmostation.io/",
+              "description": "Cosmostation is a non-custodial multi-chain cryptocurrency browser extension wallet for the Cosmos Interchain, Ethereum, ETH Layer 2, and EVM ecosystems."
             }
           ]
         },
@@ -144,17 +144,17 @@ zh:
           "items": [
             {
               "image": "/uploads/apps/iscn.svg",
-              "title": "ISCN app",
+              "title": "NFT Portal",
               "url": "https://app.like.co",
               "isOfficial": true,
-              "description": "Register your content metadata and store the content in the decentralized network with the ISCN web app. ISCN helps you prepare content as NFT."
+              "description": "The NFT Portal covers all writers that cannot use WordPress plugin. Writers can copy URL of any webpage, paste it to the portal to mint the page as Writing NFT."
             },
             {
               "image": "/uploads/apps/liker-land.svg",
-              "title": "Liker Land",
+              "title": "Writing NFT - Liker Land",
               "url": "https://liker.land",
               "isOfficial": true,
-              "description": "The web app for creators and readers to browse, read and bookmark content. Civic Liker — a business tool on Liker Land for creators to run subscription services across platforms."
+              "description": "Writing NFT is the NFT of a piece of writing, literally. It can refer to articles or any type of textual content with or without illustrations."
             },
             {
               "image": "/uploads/apps/matters.svg",
@@ -195,20 +195,6 @@ zh:
               "url": "https://app.osmosis.zone/?from=UST&to=LIKE",
               "isOfficial": true,
               "description": "Cosmos-based DEX & AMM protocol that designed for cross-chain assets. Easily swap between LIKE and other cross-chain assets."
-            },
-            {
-              "image": "/uploads/exchanges/emeris.svg",
-              "title": "Emeris",
-              "url": "https://app.emeris.com/asset/nanolike",
-              "isOfficial": true,
-              "description": "Cross-chain Defi portal. Integrated with the Gravity DEX protocol on the Cosmos Hub. Easily swap between LIKE and other cross-chain assets."
-            },
-            {
-              "image": "/uploads/exchanges/liquid.svg",
-              "title": "Liquid",
-              "url": "https://app.liquid.com/exchange/LIKEUSDT",
-              "isOfficial": false,
-              "description": "Liquid offers various forms of digital assets trading types. Buy and sell LIKE with USD/ credit card is simple and easy."
             }
           ]
         },
@@ -228,6 +214,13 @@ zh:
               "buttonTitle": "Visit",
               "url": "https://liker.land/getapp",
               "description": "The mobile app wallet for Likers. Readers can browse and reward content instantly; Creators can easily view followers' statistics, manage and stake LIKE. Wallet connect supports coming soon."
+            },
+            {
+              "image": "/uploads/wallets/cosmostation.svg",
+              "title": "Cosmostation",
+              "buttonTitle": "Visit",
+              "url": "https://cosmostation.io/",
+              "description": "Cosmostation is a non-custodial multi-chain cryptocurrency browser extension wallet for the Cosmos Interchain, Ethereum, ETH Layer 2, and EVM ecosystems."
             }
           ]
         },
