@@ -82,7 +82,7 @@ const IndexPage = () => {
             <li>
               <Button
                 preset="filled"
-                href="https://app.like.co"
+                href="https://liker.land"
                 target="_blank"
                 rel="noreferrer"
               >Get started</Button>
