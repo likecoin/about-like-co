@@ -33,7 +33,7 @@ export default function StatisticSection() {
   return (
     <section className="relative mt-[88px] px-[48px] flex justify-center">
       <div>
-        <ul className="my-14 sm:w-full max-w-[768px] min-w-[224px]  gap-x-[96px] gap-y-[48px] grid md:grid-cols-3">
+        <ul className="my-14 sm:w-full max-w-[1024px] min-w-[224px] gap-x-[96px] gap-y-[48px] flex flex-col sm:flex-row flex-wrap sm:justify-center">
           <li>
             <StatNumber
               value={walletsCount || 24000}
@@ -52,8 +52,6 @@ export default function StatisticSection() {
               label="Registered contents"
             />
           </li>
-        </ul>
-        <ul className="sm:w-full max-w-[768px] min-w-[224px]  gap-x-[96px] gap-y-[48px] grid md:grid-cols-2 place-items-center">
           <li>
             <StatNumber
               value={creatorsCount || 19000}
