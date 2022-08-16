@@ -9,11 +9,14 @@ import Button from "./Button"
 import ArrowDown from "./icons/ArrowDown"
 import Divider from "./Divider"
 import ISCNIcon from "./icons/ISCN"
+import ClapIcon from "./icons/Clap"
 import DepubIcon from "./icons/DepubSpace"
 import ArrowRight from "./icons/ArrowRight"
 
 function MenuItemIcon({ type, ...props }) {
   switch (type) {
+    case 'liker-land':
+      return <ClapIcon {...props} />
     case 'iscn':
       return <ISCNIcon {...props} />
     case 'depub':

@@ -8,9 +8,9 @@ en:
           "title": "Apps",
           "items": [
             {
-              "title": "ISCN App",
-              "url": "https://app.like.co",
-              "icon": "iscn"
+              "title": "Writing NFT",
+              "url": "https://liker.land",
+              "icon": "liker-land"
             },
             {
               "title": "depub.Space",
@@ -98,8 +98,8 @@ en:
           ]
         },
         {
-          "title": "ISCN App",
-          "url": "https://app.like.co",
+          "title": "Writing NFT",
+          "url": "https://liker.land",
           "preset": "filled"
         }
       ]
@@ -112,9 +112,9 @@ zh:
           "title": "Apps",
           "items": [
             {
-              "title": "ISCN App",
-              "url": "https://app.like.co",
-              "icon": "iscn"
+              "title": "Writing NFT",
+              "url": "https://liker.land",
+              "icon": "liker-land"
             },
             {
               "title": "depub.Space",
@@ -202,8 +202,8 @@ zh:
           ]
         },
         {
-          "title": "ISCN App",
-          "url": "https://app.like.co",
+          "title": "Writing NFT",
+          "url": "https://liker.land",
           "preset": "filled"
         }
       ]
