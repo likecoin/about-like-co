@@ -4,6 +4,7 @@ import StatNumber from "./StatNumber"
 
 export default function StatisticSection() {
   const [registeredContents, setRegisteredContents] = React.useState(0)
+  const [writingNFTCount, setWritingNFTCount] = React.useState(0)
   const [walletsCount, setWalletsCount] = React.useState(0)
   const [integratedSites, setIntegratedSites] = React.useState(0)
   const [creatorsCount, setCreatorsCount] = React.useState(0)
@@ -13,12 +14,14 @@ export default function StatisticSection() {
       try {
         const {
           totalISCNCount: registeredContentsRaw = 0,
+          NFTCount: writingNFTCountRaw = 0,
           totalLikee: creatorsCountRaw = 0,
           LIKEs: likeDistributionRaw = 0,
           totalAddresses: walletsCountRaw = 0,
           totalSites: integratedSitesRaw = 0,
         } = await fetch("https://like.co/api/like/like/stat").then((r) => r.json())
         setRegisteredContents(registeredContentsRaw)
+        setWritingNFTCount(writingNFTCountRaw)
         setCreatorsCount(creatorsCountRaw)
         setLikeDistribution(likeDistributionRaw)
         setWalletsCount(walletsCountRaw)
@@ -62,6 +65,12 @@ export default function StatisticSection() {
             <StatNumber
               value={likeDistribution || 48570000}
               label="Distributed $LIKE"
+            />
+          </li>
+          <li>
+            <StatNumber
+              value={writingNFTCount || 0}
+              label="Number of Writing NFT"
             />
           </li>
         </ul>
