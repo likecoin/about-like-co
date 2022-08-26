@@ -8,9 +8,14 @@ en:
           "title": "Apps",
           "items": [
             {
-              "title": "Writing NFT",
+              "title": "liker.land",
               "url": "https://liker.land",
               "icon": "liker-land"
+            },
+            {
+              "title": "NFT Portal",
+              "url": "https://app.like.co",
+              "icon": "iscn"
             },
             {
               "title": "depub.Space",
@@ -112,9 +117,14 @@ zh:
           "title": "Apps",
           "items": [
             {
-              "title": "Writing NFT",
+              "title": "liker.land",
               "url": "https://liker.land",
               "icon": "liker-land"
+            },
+            {
+              "title": "NFT Portal",
+              "url": "https://app.like.co",
+              "icon": "iscn"
             },
             {
               "title": "depub.Space",
