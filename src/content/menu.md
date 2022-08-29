@@ -14,7 +14,7 @@ en:
             },
             {
               "title": "NFT Portal",
-              "url": "https://app.like.co",
+              "url": "https://app.like.co/nft",
               "icon": "iscn"
             },
             {
@@ -123,7 +123,7 @@ zh:
             },
             {
               "title": "NFT Portal",
-              "url": "https://app.like.co",
+              "url": "https://app.like.co/nft",
               "icon": "iscn"
             },
             {

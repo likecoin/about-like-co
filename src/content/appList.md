@@ -24,7 +24,7 @@ en:
             {
               "image": "/uploads/apps/nft-portal.png",
               "title": "NFT Portal",
-              "url": "https://app.like.co",
+              "url": "https://app.like.co/nft",
               "isOfficial": false,
               "description": "The NFT Portal covers all writers that cannot use WordPress plugin. Writers can copy URL of any webpage, paste it to the portal to mint the page as Writing NFT."
             },
@@ -166,7 +166,7 @@ zh:
             {
               "image": "/uploads/apps/nft-portal.png",
               "title": "NFT Portal",
-              "url": "https://app.like.co",
+              "url": "https://app.like.co/nft",
               "isOfficial": false,
               "description": "The NFT Portal covers all writers that cannot use WordPress plugin. Writers can copy URL of any webpage, paste it to the portal to mint the page as Writing NFT."
             },
