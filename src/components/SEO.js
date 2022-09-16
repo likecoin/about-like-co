@@ -25,14 +25,14 @@ const SEO = ({ title, description, image, isArticle }) => {
   const organizationData = {
     '@context': 'http://www.schema.org',
     '@type': 'Organization',
-    name: 'LikeCoin Foundation',
+    name: 'LikeCoin',
     url: 'https://like.co',
     logo: 'https://like.co/logo.png',
     sameAs: [
-      'https://discord.com/invite/W4DQ6peZZZ',
+      'https://discord.com/invite/likecoin',
       'https://t.me/likecoin',
       'https://matters.news/@likecoin',
-      'https://medium.com/likecoin',
+      'https://blog.like.co',
       'https://github.com/likecoin',
       'https://twitter.com/likecoin',
       'https://www.youtube.com/c/LikeCoin',
