@@ -23,9 +23,9 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-google-analytics",
+      resolve: "gatsby-plugin-google-gtag",
       options: {
-        trackingId: "UA-72702567-14",
+        trackingIds: ["UA-72702567-14"],
       },
     },
     "gatsby-plugin-react-helmet",
