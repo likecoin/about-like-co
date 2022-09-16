@@ -21,7 +21,7 @@
     "classnames": "^2.3.1",
     "date-fns": "^2.23.0",
     "gatsby": "^3.11.1",
-    "gatsby-plugin-google-analytics": "^3.11.0",
+    "gatsby-plugin-google-gtag": "^4.22.0",
     "gatsby-plugin-manifest": "^3.11.0",
     "gatsby-plugin-netlify": "^3.12.0",
     "gatsby-plugin-netlify-cms": "^5.11.0",
