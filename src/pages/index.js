@@ -59,7 +59,7 @@ const IndexPage = () => {
                 href="https://liker.land"
                 target="_blank"
                 rel="noreferrer"
-              >Get started</Button>
+              >Writing NFT</Button>
             </li>
             <li>
               <Button
