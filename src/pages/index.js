@@ -12,8 +12,8 @@ import GradientText from "../components/GradientText"
 import LatestNewsSection from "../components/LatestNewsSection"
 import Layout from "../components/Layout"
 import MediaCoverageSection from "../components/MediaCoverageSection"
+import ParagraphSection from "../components/ParagraphSection"
 import StatisticSection from "../components/StatisticSection"
-import WhatDepubOfferItem from "../components/WhatDepubOfferItem"
 
 const IndexPage = () => {
   const communityItems = [
@@ -109,19 +109,19 @@ const IndexPage = () => {
           <p className="mt-[24px] text-like-cyan-vlight text-[20px]">LikeCoin is a inter-chain protocol and framework for decentralized publishing. It is an application-specific blockchain for building and bridging media to Web 3. </p>
           <ul className="grid md:grid-cols-2	gap-x-[32px] gap-y-[48px] mt-[48px]">
             <li>
-              <WhatDepubOfferItem title="Not your key, not your content">
+              <ParagraphSection title="Not your key, not your content">
                 Always accessible content metadata that guarantees ownership. It makes content easier to retrieve, the same as what gives an NFT its value.
-              </WhatDepubOfferItem>
+              </ParagraphSection>
             </li>
             <li>
-              <WhatDepubOfferItem title="LikeCoin DAO">
+              <ParagraphSection title="LikeCoin DAO">
                 LikeCoin is a community-owned network where LIKE holders make decisions collectively via liquid democracy. Anyone can publish content, build applications and participate in governance.
-              </WhatDepubOfferItem>
+              </ParagraphSection>
             </li>
             <li>
-              <WhatDepubOfferItem title="Publication Tools for Web 3 content">
+              <ParagraphSection title="Publication Tools for Web 3 content">
                 LikeCoin’s decentralized publication framework <a className="underline" href="https://docs.like.co/">(ISCN)</a> can easily integrate with existing media platforms and connect with other blockchains. Ready-to-use tools for creators to produce, manage and own web 3 native content.
-              </WhatDepubOfferItem>
+              </ParagraphSection>
             </li>
           </ul>
         </div>
