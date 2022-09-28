@@ -7,6 +7,7 @@ import Divider from "./Divider"
 export default function StatNumber({
   value = "",
   label = "",
+  unit = "",
   withPlus = false,
 }) {
   const [hasShown, setHasShown] = React.useState(false)
@@ -22,7 +23,7 @@ export default function StatNumber({
         onChange={handleVisibilityChange}
       >
         {({ isVisible: isShow }) =>
-          <div className="text-[36px] sm:text-[56px] min-h-[54px] sm:min-h-[84px] font-bold font-display text-white">
+          <div>
             {isShow || hasShown
               ? (    
                 <CountUp
@@ -33,7 +34,7 @@ export default function StatNumber({
                   duration={2}
                 >
                   {({ countUpRef }) => (
-                    <span ref={countUpRef} />
+                    <span className="text-[36px] sm:text-[56px] min-h-[54px] sm:min-h-[84px] font-bold text-white font-display" ref={countUpRef} />
                   )}
                 </CountUp>
               )
@@ -42,6 +43,7 @@ export default function StatNumber({
             {withPlus && (isShow || hasShown) && (
               <span className="text-like-cyan-vlight text-opacity-70">+</span>
             )}
+            {!!unit && <span className="text-[16px] text-like-cyan-vlight font-normal">&nbsp;{unit}</span>}
           </div>
         }
       </VisibilitySensor>
