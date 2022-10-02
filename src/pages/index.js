@@ -1,11 +1,13 @@
 import * as React from "react"
-import Button from "../components/Button"
+import { Link, StaticQuery, graphql } from "gatsby"
 
 import HeroImage from "../images/hero.png"
 import KeyVisualImage from "../images/key-visual.png"
 import ScrollDownHintImage from "../images/scroll-down-hint.png"
 
+import AppItem from "../components/AppItem"
 import AwardsPartnersSection from "../components/AwardsPartnersSection"
+import Button from "../components/Button"
 import CommunityLink from "../components/CommunityLink"
 import Divider from "../components/Divider"
 import GradientText from "../components/GradientText"
@@ -15,7 +17,7 @@ import MediaCoverageSection from "../components/MediaCoverageSection"
 import ParagraphSection from "../components/ParagraphSection"
 import StatisticSection from "../components/StatisticSection"
 
-const IndexPage = () => {
+const IndexPage = ({ apps }) => {
   const communityItems = [
     'discord',
     'github',
@@ -127,6 +129,24 @@ const IndexPage = () => {
         </div>
       </section>
 
+      <section className="flex flex-col items-center mt-[100px] p-[24px]">
+        <GradientText tag="h2" className="text-[48px] text-center md:text-left">
+          Discover dapps
+        </GradientText>
+        <ul className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-[24px] gap-y-[40px] mt-[32px]">
+          {apps.map((data) => (
+            <li key={data.title} className="w-[268px] h-full">
+              <AppItem {...data} />
+            </li>
+          ))}
+        </ul>
+        <div className="flex items-center justify-center mt-[32px]">
+          <Link to="/apps">
+            <Button preset="filled">More Apps</Button>
+          </Link>
+        </div>
+      </section>
+
       <div className="relative mx-[24px] mt-[88px] px-[16px] md:px-[64px] py-[64px] rounded-[16px] border-[1px] border-like-cyan-light">
         <section className="flex flex-col items-center">
           <GradientText tag="h3" className="text-[32px] text-center">Join the community</GradientText>
@@ -159,4 +179,34 @@ const IndexPage = () => {
   )
 }
 
-export default IndexPage
+export default function IndexPageWithData(props) {
+  return (
+    <StaticQuery
+      query={graphql`
+        query IndexAppListQuery {
+          appList: markdownRemark(
+            fileAbsolutePath: { regex: "/src/content/appList.md$/" }
+          ) {
+            frontmatter {
+              en {
+                appItems {
+                  code
+                }
+              }
+            }
+          }
+        }
+      `}
+      render={(data) => {
+        const {
+          appItems: { code: appListCode },
+        } = data.appList.frontmatter.en;
+        const appListData = JSON.parse(appListCode);
+        const apps = appListData
+          .filter((data) => data.title === "Apps")[0].items
+          .slice(0, 4);
+        return <IndexPage apps={apps} {...props} />;
+      }}
+    />
+  );
+}

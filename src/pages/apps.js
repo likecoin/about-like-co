@@ -28,7 +28,7 @@ const AppsPage = ({ items = [], ...props }) => {
           LikeCoin ecosystem by developers and contributors from across the
           globe.
         </div>
-        <ul className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-[24px] gap-y-[40px] mt-[88px]">
+        <ul className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-[24px] gap-y-[40px] mt-[88px]">
           {apps.map((data) => (
             <li key={data.title} className="w-[268px] h-full">
               <AppItem {...data} />
