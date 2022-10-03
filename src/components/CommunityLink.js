@@ -1,7 +1,6 @@
 import React from "react"
 import DiscordIcon from "./icons/Discord"
 import GitHubIcon from "./icons/GitHub"
-import MediumIcon from "./icons/Medium"
 import TwitterIcon from "./icons/Twitter"
 
 const communityItems = {
@@ -15,11 +14,6 @@ const communityItems = {
     label: "GitHub",
     url: "http://github.com/likecoin",
   },
-  medium: {
-    icon: MediumIcon,
-    label: "Medium",
-    url: "https://medium.com/likecoin",
-  },
   twitter: {
     icon: TwitterIcon,
     label: "Twitter",
@@ -31,7 +25,7 @@ export default function CommunityLink({ type, ...props }) {
   const { icon: Icon, label, url } = communityItems[type]
   return (
     <a
-      className="flex flex-col items-center text-center transition transition-opacity hover:opacity-70 active:opacity-50" {...props}
+      className="flex flex-col items-center text-center transition-opacity hover:opacity-70 active:opacity-50" {...props}
       href={url}
       target="_blank"
       rel="noreferrer"

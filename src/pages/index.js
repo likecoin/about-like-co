@@ -23,7 +23,6 @@ const HomePage = ({ apps, writingNFTItems }) => {
     'discord',
     'github',
     'twitter',
-    'medium',
   ]
   return (
     <Layout className="text-like-cyan-vlight">
@@ -204,9 +203,9 @@ const HomePage = ({ apps, writingNFTItems }) => {
         <Button
           className="mt-[32px]"
           preset="filled"
-          href="https://twitter.com/likecoin"
+          href="https://newsletter.like.co/"
           target="_blank"
-        >Follow us on Twitter</Button>
+        >Subscribe Newsletter</Button>
       </section>
     </Layout>
   )
