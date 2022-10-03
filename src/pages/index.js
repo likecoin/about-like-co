@@ -5,6 +5,7 @@ import HeroImage from "../images/hero.png"
 import KeyVisualImage from "../images/key-visual.png"
 import ScrollDownHintImage from "../images/scroll-down-hint.png"
 
+import AppGridList from "../components/AppGridList"
 import AppItem from "../components/AppItem"
 import AwardsPartnersSection from "../components/AwardsPartnersSection"
 import Button from "../components/Button"
@@ -165,13 +166,13 @@ const HomePage = ({ apps, writingNFTItems }) => {
         <GradientText tag="h2" className="text-[48px] text-center md:text-left">
           Discover dapps
         </GradientText>
-        <ul className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-[24px] gap-y-[40px] mt-[32px]">
+        <AppGridList className="mt-[32px]">
           {apps.map((data) => (
-            <li key={data.title} className="w-[268px] h-full">
+            <li key={data.title} className="w-[268px]">
               <AppItem {...data} />
             </li>
           ))}
-        </ul>
+        </AppGridList>
         <div className="flex items-center justify-center mt-[32px]">
           <Link to="/apps">
             <Button preset="filled">More Apps</Button>
