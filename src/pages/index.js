@@ -16,8 +16,9 @@ import Layout from "../components/Layout"
 import MediaCoverageSection from "../components/MediaCoverageSection"
 import ParagraphSection from "../components/ParagraphSection"
 import StatisticSection from "../components/StatisticSection"
+import NFTWidgetSlideshow from "../components/NFTWidgetSlideshow"
 
-const IndexPage = ({ apps }) => {
+const HomePage = ({ apps, writingNFTItems }) => {
   const communityItems = [
     'discord',
     'github',
@@ -129,6 +130,33 @@ const IndexPage = ({ apps }) => {
         </div>
       </section>
 
+      {/* Writing NFT Section */}
+      <section className="mt-[96px] md:mt-[288px]">
+        <GradientText tag="h2" className="px-[24px] text-[48px] text-center md:text-left">Writing NFT</GradientText>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-[48px] mt-[48px]">
+          <ul className="grid gap-y-[48px] p-[24px]">
+            <li>
+              <ParagraphSection title="Widget">
+              A <b className="text-like-cyan">mini NFT marketplace</b> that can be <b class="text-like-cyan">embedded</b> into any website. Writers can focus on creating quality content while readers can collect and own their favorite articles in NFT. Everyone can sell his or her work as NFT without worrying about the technical legwork. With a simplified process of creating an NFT, writers can quickly turn their writing into an NFT at the same time when they publish to the internet.
+              </ParagraphSection>
+            </li>
+            <li>
+              <ParagraphSection title="Portal">
+              Writers can turn any <b class="text-like-cyan">webpage</b> into an NFT. Enjoy the benefits of decentralized storage and create NFT in several clicks. No more pages not found, always <b class="text-like-cyan">accessible</b> to your content, truly own and <b class="text-like-cyan">monetize</b> your work.
+              </ParagraphSection>
+            </li>
+            <li>
+              <ParagraphSection title="WordPress Plugin">
+              Self-host bloggers can install the <b class="text-like-cyan">Writing NFT WordPress plugin</b> to place the NFT widget on their site and publish posts as NFTs.
+              </ParagraphSection>
+            </li>
+          </ul>
+          <div className="sm:p-[24px] lg:mt-[64px]">
+            <NFTWidgetSlideshow items={writingNFTItems} />
+          </div>
+        </div>
+      </section>
+
       <section className="flex flex-col items-center mt-[100px] p-[24px]">
         <GradientText tag="h2" className="text-[48px] text-center md:text-left">
           Discover dapps
@@ -179,11 +207,11 @@ const IndexPage = ({ apps }) => {
   )
 }
 
-export default function IndexPageWithData(props) {
+export default function HomePageWithData(props) {
   return (
     <StaticQuery
       query={graphql`
-        query IndexAppListQuery {
+        query HomePageQuery {
           appList: markdownRemark(
             fileAbsolutePath: { regex: "/src/content/appList.md$/" }
           ) {
@@ -195,17 +223,29 @@ export default function IndexPageWithData(props) {
               }
             }
           }
+          homePage: pagesJson(name: {eq: "home"}) {
+            writingNFTItems {
+              classId
+            }
+          }
         }
       `}
       render={(data) => {
         const {
           appItems: { code: appListCode },
         } = data.appList.frontmatter.en;
+        const { writingNFTItems } = data.homePage;
         const appListData = JSON.parse(appListCode);
         const apps = appListData
           .filter((data) => data.title === "Apps")[0].items
           .slice(0, 4);
-        return <IndexPage apps={apps} {...props} />;
+        return (
+          <HomePage
+            apps={apps}
+            writingNFTItems={writingNFTItems}
+            {...props}
+          />
+        );
       }}
     />
   );

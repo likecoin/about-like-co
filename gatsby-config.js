@@ -30,6 +30,7 @@ module.exports = {
     },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
+    "gatsby-transformer-json",
     {
       resolve: "gatsby-source-filesystem",
       options: {

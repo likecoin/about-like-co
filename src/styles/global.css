@@ -14,3 +14,7 @@ html {
 a[type=button] {
   -webkit-appearance: none;
 }
+
+.swiper-slide-shadow {
+  display: none;
+}
