@@ -63,7 +63,7 @@ function SlideshowControl({ items, currentIndex }) {
 }
 
 export default function NFTWidgetSlideshow({ items }) {
-  const [currentIndex, setCurrentIndex] = useState();
+  const [currentIndex, setCurrentIndex] = useState(0);
   return (
     <Swiper
       modules={[EffectCards]}
