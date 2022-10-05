@@ -37,23 +37,33 @@ function SlideshowControl({ items, currentIndex }) {
         isDisabled={currentIndex === 0}
         onClick={() => swiper.slidePrev()}
       />
-      {items.map((nft, i) => (
-        <button
-          key={nft.classId}
-          className={classNames(
-            "group",
-            "p-[8px]",
-            i === currentIndex ? "text-like-cyan" : "text-like-cyan-light",
-            "hover:opacity-75",
-            "transition-colors",
-            "transition-opacity",
-          )}
-          disabled={i === currentIndex}
-          onClick={() => swiper.slideTo(i)}
-        >
-          <span className="w-[8px] h-[8px] rounded-full block bg-current" />
-        </button>
-      ))}
+      {items.map((nft, i) => {
+        const isActive = i === currentIndex;
+        return (
+          <button
+            key={nft.classId}
+            className={classNames(
+              "flex items-center justify-center",
+              "w-[24px] h-[24px]",
+              isActive ? "text-like-cyan" : "text-like-cyan-light",
+              "hover:opacity-75",
+              "transition-colors",
+              "transition-opacity",
+            )}
+            disabled={isActive}
+            onClick={() => swiper.slideTo(i)}
+          >
+            <span className={classNames(
+              "w-[8px] h-[8px]",
+              "rounded-full block bg-current",
+              "transition-transform",
+              {
+                "scale-50": !isActive,
+              }
+            )} />
+          </button>
+        )
+      })}
       <SlideshowNavButton
         isDisabled={currentIndex === items.length - 1}
         onClick={() => swiper.slideNext()}
