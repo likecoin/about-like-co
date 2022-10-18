@@ -53,9 +53,9 @@ const HomePage = ({ apps, writingNFTItems }) => {
       </section>
 
       {/* Sub-Nav Section */}
-      <section className="flex flex-col items-center relative mt-[88px]">
+      <section className="flex flex-col items-center relative mt-[32px] sm:mt-[88px]">
         <nav className="flex justify-center">
-          <ul className="grid sm:grid-flow-col-dense auto-cols-auto gap-x-[8px] gap-y-[16px]">
+          <ul className="grid grid-cols-2 sm:flex flex-wrap gap-x-[8px] gap-y-[16px]">
             <li>
               <Button
                 preset="filled"
