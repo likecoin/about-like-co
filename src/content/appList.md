@@ -48,13 +48,6 @@ en:
               "url": "https://dao.like.co/",
               "isOfficial": false,
               "description": "The dashboard that helps you to manage, stake and vote with LIKE. Supports login with Keplr wallet, Ledger and Liker ID."
-            },
-            {
-              "image": "/uploads/apps/ddshare.svg",
-              "title": "DDShare",
-              "url": "https://www.ddshare.io/",
-              "isOfficial": false,
-              "description": "Decentralized data-sharing infrastructure. Integrated with LikeCoin and other web3 protocols to offer data sharing services."
             }
           ]
         },
@@ -190,13 +183,6 @@ zh:
               "url": "https://dao.like.co/",
               "isOfficial": false,
               "description": "The dashboard that helps you to manage, stake and vote with LIKE. Supports login with Keplr wallet, Ledger and Liker ID."
-            },
-            {
-              "image": "/uploads/apps/ddshare.svg",
-              "title": "DDShare",
-              "url": "https://www.ddshare.io/",
-              "isOfficial": false,
-              "description": "Decentralized data-sharing infrastructure. Integrated with LikeCoin and other web3 protocols to offer data sharing services."
             }
           ]
         },
