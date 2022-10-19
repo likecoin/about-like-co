@@ -181,6 +181,13 @@ const HomePage = ({ apps, writingNFTItems }) => {
         </div>
       </section>
 
+      <section className="flex flex-col items-center mt-[100px] p-[24px]">
+        <GradientText tag="h2" className="text-[48px] text-center md:text-left">
+          Swap, Stake, and Earn LIKE
+        </GradientText>
+        <p className="mt-[24px] text-like-cyan-vlight text-[20px]">Swap, stake, and earn LIKE in one click and start to generate yields on the leading decentralized Cosmos exchange, <a className="font-[600] text-like-cyan underline" href="https://app.osmosis.zone/pool/553" target="_blank">Osmosis</a>.</p>
+      </section>
+
       <div className="relative mx-[24px] mt-[88px] px-[16px] md:px-[64px] py-[64px] rounded-[16px] border-[1px] border-like-cyan-light">
         <section className="flex flex-col items-center">
           <GradientText tag="h3" className="text-[32px] text-center">Join the community</GradientText>
