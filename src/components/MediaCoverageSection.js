@@ -12,11 +12,11 @@ function MediaCoverageSection({ className, items, ...props }) {
       {...props}
     >
       <GradientText tag="h3" className="text-[32px] text-center">Media Coverage</GradientText>
-      <ul className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[16px] mt-[32px]">
+      <ul className="w-full grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[16px] mt-[32px]">
         {items.map(({ title, url, platform, image, backgroundColor }, i) => (
-          <li key={i} className="max-w-[240px]">
+          <li key={i} className="max-w-[240px] w-full">
             <MediaCoverageItem
-              className="h-full"
+              className="w-full h-full"
               title={title}
               image={image}
               url={url}
