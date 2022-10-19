@@ -17,6 +17,7 @@ import Layout from "../components/Layout"
 import MediaCoverageSection from "../components/MediaCoverageSection"
 import ParagraphSection from "../components/ParagraphSection"
 import StatisticSection from "../components/StatisticSection"
+import SubscribeNewsletterSection from "../components/SubscribeNewsletterSection"
 import NFTWidgetSlideshow from "../components/NFTWidgetSlideshow"
 
 const HomePage = ({ apps, writingNFTItems }) => {
@@ -207,15 +208,7 @@ const HomePage = ({ apps, writingNFTItems }) => {
 
       <AwardsPartnersSection className="mt-[88px]" />
 
-      <section className="flex flex-col items-center mt-[88px]">
-        <GradientText tag="h3" className="text-[32px] text-center">Follow us</GradientText>
-        <Button
-          className="mt-[32px]"
-          preset="filled"
-          href="https://newsletter.like.co/"
-          target="_blank"
-        >Subscribe Newsletter</Button>
-      </section>
+      <SubscribeNewsletterSection />
     </Layout>
   )
 }
