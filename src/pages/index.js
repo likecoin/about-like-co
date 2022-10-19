@@ -112,7 +112,7 @@ const HomePage = ({ apps, writingNFTItems }) => {
           <p className="mt-[24px] text-like-cyan-vlight text-[20px]">LikeCoin is an application-specific blockchain on decentralized publishing built on Cosmos SDK. LikeCoin provides open source products ranging from infrastructure to publishing tools for creators on board to Web3.</p>
           <ul className="grid md:grid-cols-2	gap-x-[32px] gap-y-[48px] mt-[48px]">
             <li>
-              <ParagraphSection title="Metadata registry">
+              <ParagraphSection title="Metadata Registry">
               For the future of decentralized publishing to work, it is essential to have a global, decentralized, and resilient digital content registry as the cornerstone. International Standard Content Number, abbreviated as <b className="text-like-cyan">ISCN</b>, is a metadata framework for digital content on the LikeCoin chain. ISCN is like a <b className="text-like-cyan">digital content ID</b>; helps to identify a specific digital content, records the content metadata, the intellectual property rights, and the stakeholders of the creation. ISCN also represents the <b className="text-like-cyan">property right layer</b> of LikeCoin NFT, it records the relationships between the content and creator.
               </ParagraphSection>
             </li>
@@ -122,12 +122,12 @@ const HomePage = ({ apps, writingNFTItems }) => {
               </ParagraphSection>
             </li>
             <li>
-              <ParagraphSection title="NFT module">
+              <ParagraphSection title="NFT Module">
               LikeCoin utilizes Cosmos SDK’s x/nft standard enables users to create NFT classes and mint NFTs under an ISCN metadata record. LikeCoin envisions a future where digital content is transformed from web-native to NFT native format. All content will be natively created on the blockchain and stored separately in the property right and NFT layers.
               </ParagraphSection>
             </li>
             <li>
-              <ParagraphSection title="LIKE">
+              <ParagraphSection title="LIKE Token">
               LIKE is the native token of the LikeCoin chain. It is the utility and governance token of the LikeCoin ecosystem. All network usage and services such as content registry, storage, writing NFT, and like reward mechanism will require LIKE to facilitate.
               </ParagraphSection>
             </li>
