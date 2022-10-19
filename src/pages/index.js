@@ -19,6 +19,7 @@ import ParagraphSection from "../components/ParagraphSection"
 import StatisticSection from "../components/StatisticSection"
 import SubscribeNewsletterSection from "../components/SubscribeNewsletterSection"
 import NFTWidgetSlideshow from "../components/NFTWidgetSlideshow"
+import JoinValidatorSection from "../components/JoinValidatorSection"
 
 const HomePage = ({ apps, writingNFTItems }) => {
   const communityItems = [
@@ -181,6 +182,8 @@ const HomePage = ({ apps, writingNFTItems }) => {
           </Link>
         </div>
       </section>
+
+      <JoinValidatorSection className="mt-[88px]" />
 
       <section className="flex flex-col items-center mt-[100px] p-[24px]">
         <GradientText tag="h2" className="text-[48px] text-center md:text-left">
