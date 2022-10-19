@@ -24,6 +24,7 @@ const HomePage = ({ apps, writingNFTItems }) => {
     'discord',
     'github',
     'twitter',
+    'likersocial',
   ]
   return (
     <Layout className="text-like-cyan-vlight">
