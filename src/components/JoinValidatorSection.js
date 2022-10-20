@@ -46,7 +46,7 @@ export const JoinValidatorSection = ({ className, ...props }) => {
         ))}
       </ul>
       <div className="flex items-center justify-center mt-[32px]">
-        <a href="https://docs.like.co/validator/" target="_blank">
+        <a href="https://docs.like.co/validator/" target="_blank" rel="noreferrer">
           <Button
             className="flex items-center justify-center"
             preset="filled"
