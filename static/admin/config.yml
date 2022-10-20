@@ -12,7 +12,6 @@ backend:
     openAuthoring: '🚧 {{message}}'
 # Set to true for development
 local_backend: false
-publish_mode: editorial_workflow
 media_folder: "/static/uploads"
 public_folder: "/uploads"
 i18n:
