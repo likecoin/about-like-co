@@ -35,7 +35,7 @@ function LatestNewsSection({ className, items, blogUrl, ...props }) {
         target="_blank"
         rel="noreferrer"
       >
-        See more news
+        More News
         <NorthEastIcon className="ml-[8px]" />
       </Button>
     </section>

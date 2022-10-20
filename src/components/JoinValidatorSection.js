@@ -3,7 +3,7 @@ import cn from "classnames"
 
 import Button from "./Button"
 import GradientText from "./GradientText"
-import NorthEastMiniIcon from "./icons/NorthEastMini"
+import NorthEastIcon from "./icons/NorthEast";
 
 export const JoinValidatorSection = ({ className, ...props }) => {
   const items = [
@@ -50,7 +50,7 @@ export const JoinValidatorSection = ({ className, ...props }) => {
           <Button
             className="flex items-center justify-center"
             preset="filled"
-          >Learn More <NorthEastMiniIcon className="ml-[4px]"/></Button>
+          >Learn More <NorthEastIcon className="ml-[8px]"/></Button>
         </a>
       </div>
     </section>
