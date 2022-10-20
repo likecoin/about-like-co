@@ -21,7 +21,7 @@ import SubscribeNewsletterSection from "../components/SubscribeNewsletterSection
 import NFTWidgetSlideshow from "../components/NFTWidgetSlideshow"
 import JoinValidatorSection from "../components/JoinValidatorSection"
 
-const HomePage = ({ apps, writingNFTItems }) => {
+const HomePage = ({ apps, writingNFTItems, blogUrl }) => {
   const communityItems = [
     'discord',
     'github',
@@ -78,7 +78,7 @@ const HomePage = ({ apps, writingNFTItems }) => {
             <li>
               <Button
                 preset="outlined"
-                href="https://medium.com/likecoin"
+                href={blogUrl}
                 target="_blank"
                 rel="noreferrer"
               >Blog</Button>
@@ -221,6 +221,11 @@ export default function HomePageWithData(props) {
     <StaticQuery
       query={graphql`
         query HomePageQuery {
+          site {
+            siteMetadata {
+              blogUrl
+            }
+          }
           appList: markdownRemark(
             fileAbsolutePath: { regex: "/src/content/appList.md$/" }
           ) {
@@ -252,6 +257,7 @@ export default function HomePageWithData(props) {
           <HomePage
             apps={apps}
             writingNFTItems={writingNFTItems}
+            blogUrl={data.site.siteMetadata.blogUrl}
             {...props}
           />
         );
