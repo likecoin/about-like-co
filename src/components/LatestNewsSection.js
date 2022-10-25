@@ -7,7 +7,7 @@ import Button from "./Button"
 import LatestNewsItem from "./LatestNewsItem"
 import NorthEastIcon from "./icons/NorthEast"
 
-function LatestNewsSection({ className, items, ...props }) {
+function LatestNewsSection({ className, items, blogUrl, ...props }) {
   return (
     <section
       className={cn("flex flex-col items-center mt-[88px]", className)}
@@ -31,11 +31,11 @@ function LatestNewsSection({ className, items, ...props }) {
       <Button
         className="flex items-center mt-[32px]"
         preset="filled"
-        href="https://medium.com/likecoin"
+        href={blogUrl}
         target="_blank"
         rel="noreferrer"
       >
-        See more news
+        More News
         <NorthEastIcon className="ml-[8px]" />
       </Button>
     </section>
@@ -47,6 +47,11 @@ export default function LatestNewsSectionWithData(props) {
     <StaticQuery
       query={graphql`
         query NewsQuery {
+          site {
+            siteMetadata {
+              blogUrl
+            }
+          }
           items: allMarkdownRemark(
             filter: {fileAbsolutePath: {regex: "//en//"}, frontmatter: {type: {eq: "news"}}}
             sort: {fields: frontmatter___date, order: DESC}
@@ -68,6 +73,7 @@ export default function LatestNewsSectionWithData(props) {
       render={data => (
         <LatestNewsSection
           items={data.items.edges.map(({ node }) => node.frontmatter)}
+          blogUrl={data.site.siteMetadata.blogUrl}
           {...props}
         />
       )}

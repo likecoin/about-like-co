@@ -8,6 +8,7 @@ module.exports = {
     image: "/og.png",
     twitterUsername: "@likecoin",
     themeColor: '#28646e',
+    blogUrl: "https://blog.like.co",
   },
   plugins: [
     {
@@ -30,6 +31,7 @@ module.exports = {
     },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
+    "gatsby-transformer-json",
     {
       resolve: "gatsby-source-filesystem",
       options: {

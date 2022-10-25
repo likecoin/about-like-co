@@ -47,10 +47,6 @@ export default function LatestNewsItem({
           />
         </div>
       </div>
-      <div className="p-[16px] border-t-[1px] border-like-cyan-light">
-        <div className="text-[12px] font-bold text-like-green">{platform}</div>
-        <div className="mt-[4px] text-dark-gray text-[16px] font-600">{title}</div>
-      </div>
     </a>
   )
 }

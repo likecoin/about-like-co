@@ -9,6 +9,7 @@ export default function AppItem({
   image,
   url,
   description,
+  buttonTitle = 'Visit',
   isOfficial = false,
   ...props
 }) {
@@ -19,7 +20,7 @@ export default function AppItem({
     >
       <img className="w-[64px] h-[64px]" src={image} alt={title} />
       <div className={cn("mt-[12px] text-[24px] font-600", isOfficial ? "text-like-green" : "text-dark-gray")}>{title}</div>
-      <div className={cn("my-[12px] text-dark-gray mb-[60px]")}> {description} </div>
+      <div className={cn("my-[12px] text-dark-gray mb-[60px]")} dangerouslySetInnerHTML={{ __html: description }} />
       <Button
         className="absolute left-[50%] translate-x-[-50%] bottom-[40px] flex items-center justify-center py-[4px] w-[188px]"
         preset={isOfficial ? "filled" : "outlined"}
@@ -29,7 +30,7 @@ export default function AppItem({
         rel="referrer"
         isNoPadding
       >
-        Visit <NorthEastMiniIcon className="ml-[4px]"/>
+        {buttonTitle} <NorthEastMiniIcon className="ml-[4px]"/>
       </Button>
     </div>
   )

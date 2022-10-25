@@ -34,43 +34,48 @@ export default function StatisticSection() {
     fetchData()
   }, [])
   return (
-    <section className="relative mt-[88px] px-[48px] flex justify-center">
+    <section className="relative mt-[88px] px-[48px]">
       <div>
-        <ul className="my-14 sm:w-full max-w-[1024px] min-w-[224px] gap-x-[96px] gap-y-[48px] flex flex-col sm:flex-row flex-wrap sm:justify-center">
+        <ul className="mx-auto my-14 w-full lg:max-w-[1024px] xl:max-w-[1440px] min-w-[224px] gap-x-[96px] gap-y-[48px] grid md:grid-cols-2 xl:grid-cols-3 sm:flex-row flex-wrap justify-center">
           <li>
             <StatNumber
               value={walletsCount || 24000}
-              label="Addresses"
+              unit="likers"
+              label="Addresses with LIKE"
             />
           </li>
           <li>
             <StatNumber
               value={integratedSites || 7000}
-              label="Sites"
+              unit="media sites"
+              label="LikeCoin Widget loaded"
             />
           </li>
           <li>
             <StatNumber
               value={registeredContents || 683384}
-              label="Registered contents"
+              unit="content"
+              label="Content registered in the LikeCoin network"
             />
           </li>
           <li>
             <StatNumber
               value={creatorsCount || 19000}
-              label="Creators"
+              unit="creators"
+              label="Liker ID with LikeCoin Widget"
             />
           </li>
           <li>
             <StatNumber
               value={likeDistribution || 48570000}
-              label="Distributed $LIKE"
+              unit="LIKE"
+              label="Distributed LIKE"
             />
           </li>
           <li>
             <StatNumber
-              value={writingNFTCount || 0}
-              label="Number of Writing NFT"
+              value={writingNFTCount || 1300}
+              unit="Writing NFT"
             />
           </li>
         </ul>

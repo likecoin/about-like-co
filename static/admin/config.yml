@@ -41,6 +41,24 @@ collections:
             widget: code
             default_language: "json"
             i18n: true
+  - name: pages
+    label: "Pages"
+    files:
+      - name: home
+        label: "Home Page"
+        file: "/src/content/pages/home.json"
+        fields:
+          - name: name
+            label: "Name"
+            widget: hidden
+            default: home
+          - name: writingNFTItems
+            label: "Featured Writing NFT Items"
+            widget: list
+            fields:
+              - name: classId
+                label: "NFT Class ID"
+                widget: string
   - name: news
     label: "News"
     folder: "src/content/news"

@@ -13,14 +13,14 @@ en:
               "icon": "liker-land"
             },
             {
-              "title": "NFT Portal",
-              "url": "https://app.like.co/nft",
-              "icon": "iscn"
-            },
-            {
               "title": "depub.Space",
               "url": "https://depub.space/",
               "icon": "depub"
+            },
+            {
+              "title": "matters.news",
+              "url": "https://matters.news/",
+              "icon": "matters"
             },
             {
               "title": "More",
@@ -32,20 +32,20 @@ en:
           "title": "Developer",
           "items": [
             {
-              "title": "Documentation",
-              "url": "https://docs.like.co/developer/introduction"
-            },
-            {
               "title": "GitHub",
               "url": "https://github.com/likecoin"
             },
             {
-              "title": "LikeCoin Grants",
-              "url": "https://likecoingrants.notion.site/likecoingrants/MainPage-32d790bb3d3b4b6ea9832dc0fe8bda62"
+              "title": "Validator",
+              "url": "https://docs.like.co/validator/"
             },
             {
-              "title": "ISCN Spec",
+              "title": "ISCN Specification",
               "url": "https://iscn.io"
+            },
+            {
+              "title": "Documentation",
+              "url": "https://docs.like.co/developer/introduction"
             }
           ]
         },
@@ -72,10 +72,6 @@ en:
             {
               "title": "Twitter",
               "url": "https://twitter.com/likecoin"
-            },
-            {
-              "title": "Community Call",
-              "url": "https://docs.like.co/general-guides/governance/community-call"
             }
           ]
         },
@@ -122,14 +118,14 @@ zh:
               "icon": "liker-land"
             },
             {
-              "title": "NFT Portal",
-              "url": "https://app.like.co/nft",
-              "icon": "iscn"
-            },
-            {
               "title": "depub.Space",
               "url": "https://depub.space/",
               "icon": "depub"
+            },
+            {
+              "title": "matters.news",
+              "url": "https://matters.news/",
+              "icon": "matters"
             },
             {
               "title": "More",
@@ -141,20 +137,20 @@ zh:
           "title": "Developer",
           "items": [
             {
-              "title": "Documentation",
-              "url": "https://docs.like.co/developer/introduction"
-            },
-            {
               "title": "GitHub",
               "url": "https://github.com/likecoin"
             },
             {
-              "title": "LikeCoin Grants",
-              "url": "https://likecoingrants.notion.site/likecoingrants/MainPage-32d790bb3d3b4b6ea9832dc0fe8bda62"
+              "title": "Validator",
+              "url": "https://docs.like.co/validator/"
             },
             {
-              "title": "ISCN Spec",
+              "title": "ISCN Specification",
               "url": "https://iscn.io"
+            },
+            {
+              "title": "Documentation",
+              "url": "https://docs.like.co/developer/introduction"
             }
           ]
         },
@@ -181,10 +177,6 @@ zh:
             {
               "title": "Twitter",
               "url": "https://twitter.com/likecoin"
-            },
-            {
-              "title": "Community Call",
-              "url": "https://docs.like.co/general-guides/governance/community-call"
             }
           ]
         },

@@ -1,7 +1,7 @@
 import React from "react"
 import { IconDepub } from "./icons/Depub"
 
-export default function WhatDepubOfferItem({ title, children, ...props}) {
+export default function ParagraphSection({ title, children, ...props}) {
   return (
     <div {...props}>
       <div className="text-like-cyan"><IconDepub /></div>

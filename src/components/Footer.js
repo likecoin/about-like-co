@@ -1,14 +1,25 @@
 import React from "react";
+import { graphql, useStaticQuery } from "gatsby";
+
 import Button from "./Button";
 
 export default function Footer() {
+  const { site: { siteMetadata: { blogUrl } } } = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          blogUrl
+        }
+      }
+    }
+  `);
   return (
     <footer className="flex justify-center md:justify-end mt-[88px] p-[32px]">
       <nav>
         <ul className="grid grid-flow-col-dense auto-cols-auto gap-x-[8px] gap-y-[16px]">
           <li>
             <Button
-              href="https://blog.like.co/"
+              href={blogUrl}
               target="_blank"
               rel="noreferrer"
             >
