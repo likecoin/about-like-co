@@ -69,6 +69,14 @@ const HomePage = ({ apps, writingNFTItems, blogUrl }) => {
             </li>
             <li>
               <Button
+                preset="filled"
+                href="https://app.like.co"
+                target="_blank"
+                rel="noreferrer"
+              >Register ISCN</Button>
+            </li>
+            <li>
+              <Button
                 preset="outlined"
                 href="https://docs.like.co/"
                 target="_blank"
