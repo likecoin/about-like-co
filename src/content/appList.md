@@ -49,6 +49,20 @@ en:
               "url": "https://dao.like.co/",
               "isOfficial": true,
               "description": "The dashboard that helps you to manage, stake and vote with LIKE. Supports login with Keplr wallet, Ledger and Liker ID."
+            },
+            {
+              "image": "/uploads/apps/iscn.svg",
+              "title": "ISCN Browser",
+              "url": "https://likecoin.github.io/iscn-browser/",
+              "isOfficial": true,
+              "description": "Search, browse and edit ISCN on LikeCoin chain."
+            },
+            {
+              "image": "/uploads/apps/stake-like-co.svg",
+              "title": "NFT Dashboard",
+              "url": "https://likecoin.github.io/likecoin-nft-dashboard",
+              "isOfficial": true,
+              "description": "Dashboard for NFT statistics on LikeCoin chain."
             }
           ]
         },
@@ -182,6 +196,20 @@ zh:
               "url": "https://dao.like.co/",
               "isOfficial": true,
               "description": "The dashboard that helps you to manage, stake and vote with LIKE. Supports login with Keplr wallet, Ledger and Liker ID."
+            },
+            {
+              "image": "/uploads/apps/iscn.svg",
+              "title": "ISCN Browser",
+              "url": "https://likecoin.github.io/iscn-browser/",
+              "isOfficial": true,
+              "description": "Search, browse and edit ISCN on LikeCoin chain."
+            },
+            {
+              "image": "/uploads/apps/stake-like-co.svg",
+              "title": "NFT Dashboard",
+              "url": "https://likecoin.github.io/likecoin-nft-dashboard",
+              "isOfficial": true,
+              "description": "Dashboard for NFT statistics on LikeCoin chain."
             }
           ]
         },
