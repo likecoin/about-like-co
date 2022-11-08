@@ -27,7 +27,7 @@ export default function AppItem({
         theme={isOfficial ? "dark" : "light"}
         href={url}
         target="_blank"
-        rel="referrer"
+        rel="noopener"
         isNoPadding
       >
         {buttonTitle} <NorthEastMiniIcon className="ml-[4px]"/>

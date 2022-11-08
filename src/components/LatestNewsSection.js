@@ -33,7 +33,7 @@ function LatestNewsSection({ className, items, blogUrl, ...props }) {
         preset="filled"
         href={blogUrl}
         target="_blank"
-        rel="noreferrer"
+        rel="noopener"
       >
         More News
         <NorthEastIcon className="ml-[8px]" />

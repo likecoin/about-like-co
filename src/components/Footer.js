@@ -21,7 +21,7 @@ export default function Footer() {
             <Button
               href={blogUrl}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener"
             >
               Blog
             </Button>
@@ -30,7 +30,7 @@ export default function Footer() {
             <Button
               href="https://docs.like.co/faq"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener"
             >
               FAQ
             </Button>
@@ -39,7 +39,7 @@ export default function Footer() {
             <Button
               href="https://likecoin.notion.site/Branding-and-Design-96b3d582c3014003985a8819b31217fa"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener"
             >
               Brand
             </Button>

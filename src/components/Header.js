@@ -69,7 +69,7 @@ export function Header({ items = [], ...props }) {
                         theme="light"
                         href={secondLevelItem.url}
                         target="_blank"
-                        rel="noreferrer"
+                        rel="noopener"
                         isNoPadding
                       >
                         {title}
@@ -135,7 +135,7 @@ export function Header({ items = [], ...props }) {
                     preset={topLevelItem.preset}
                     href={topLevelItem.url}
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener"
                   >
                     {topLevelItem.title}
                   </Button>
@@ -207,7 +207,7 @@ export function Header({ items = [], ...props }) {
                               theme="light"
                               href={secondLevelItem.url}
                               target="_blank"
-                              rel="noreferrer"
+                              rel="noopener"
                             >
                               {title}
                             </Button>
@@ -272,7 +272,7 @@ export function Header({ items = [], ...props }) {
                         theme="light"
                         href={topLevelItem.url}
                         target="_blank"
-                        rel="noreferrer"
+                        rel="noopener"
                       >
                         {topLevelItem.title}
                       </Button>

@@ -64,7 +64,7 @@ const HomePage = ({ apps, writingNFTItems, blogUrl }) => {
                 preset="filled"
                 href="https://liker.land"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener"
               >Writing NFT</Button>
             </li>
             <li>
@@ -72,7 +72,7 @@ const HomePage = ({ apps, writingNFTItems, blogUrl }) => {
                 preset="filled"
                 href="https://app.like.co"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener"
               >Register ISCN</Button>
             </li>
             <li>
@@ -80,7 +80,7 @@ const HomePage = ({ apps, writingNFTItems, blogUrl }) => {
                 preset="outlined"
                 href="https://docs.like.co/"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener"
               >Docs</Button>
             </li>
             <li>
@@ -88,7 +88,7 @@ const HomePage = ({ apps, writingNFTItems, blogUrl }) => {
                 preset="outlined"
                 href={blogUrl}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener"
               >Blog</Button>
             </li>
             <li>
@@ -96,7 +96,7 @@ const HomePage = ({ apps, writingNFTItems, blogUrl }) => {
                 preset="outlined"
                 href="https://docs.like.co/faq"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener"
               >FAQ</Button>
             </li>
           </ul>
@@ -197,7 +197,7 @@ const HomePage = ({ apps, writingNFTItems, blogUrl }) => {
         <GradientText tag="h2" className="text-[48px] text-center md:text-left">
           Swap, Stake, and Earn LIKE
         </GradientText>
-        <p className="mt-[24px] text-like-cyan-vlight text-[20px]">Swap, stake, and earn LIKE in one click and start to generate yields on the leading decentralized Cosmos exchange, <a className="font-[600] text-like-cyan underline" href="https://app.osmosis.zone/pool/553" target="_blank" rel="noreferrer">Osmosis</a>.</p>
+        <p className="mt-[24px] text-like-cyan-vlight text-[20px]">Swap, stake, and earn LIKE in one click and start to generate yields on the leading decentralized Cosmos exchange, <a className="font-[600] text-like-cyan underline" href="https://app.osmosis.zone/pool/553" target="_blank" rel="noopener">Osmosis</a>.</p>
       </section>
 
       <div className="relative mx-[24px] mt-[88px] px-[16px] md:px-[64px] py-[64px] rounded-[16px] border-[1px] border-like-cyan-light">
