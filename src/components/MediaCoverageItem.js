@@ -33,7 +33,7 @@ export default function LatestNewsItem({
       href={url}
       title={title}
       target="_blank"
-      rel="noreferrer"
+      rel="noopener"
     >
       <div
         className="aspect-w-1 aspect-h-1"

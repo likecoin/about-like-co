@@ -35,7 +35,7 @@ export default function CommunityLink({ type, ...props }) {
       className="flex flex-col items-center text-center transition-opacity hover:opacity-70 active:opacity-50" {...props}
       href={url}
       target="_blank"
-      rel="noreferrer"
+      rel="noopener"
       title={label}
     >
       <div className="flex items-center justify-center w-[48px] h-[48px] rounded-full bg-like-cyan-light text-like-green">

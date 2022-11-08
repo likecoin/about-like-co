@@ -63,7 +63,7 @@ export default function AwardsPartnersSection({ className, ...props }) {
                 href={url}
                 target="_blank"
                 title={title}
-                rel="noreferrer"
+                rel="noopener"
               >
                 <img src={image} alt={title} />
               </a>
