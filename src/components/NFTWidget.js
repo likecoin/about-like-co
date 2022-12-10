@@ -10,6 +10,7 @@ export default function NFTWidget ({ className, classId }) {
       height={480}
       scrolling="no"
       frameBorder="0"
+      loading="lazy"
     />
   )
 }
