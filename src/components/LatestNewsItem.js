@@ -39,6 +39,7 @@ export default function LatestNewsItem({
       <div className="aspect-w-15 aspect-h-8">
         <img
           className="block object-cover w-full h-full"
+          loading="lazy"
           src={image}
           alt={title}
         />
