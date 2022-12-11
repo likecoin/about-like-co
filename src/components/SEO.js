@@ -64,6 +64,8 @@ const SEO = ({ title, description, image, isArticle }) => {
         <meta name="twitter:description" content={seo.description} />
       )}
       {seo.image && <meta name="twitter:image" content={seo.image} />}
+      <link rel="preload" href="https://use.typekit.net/yqg7ihd.css" as="style" />
+      <link rel="preload" href="https://substackapi.com/widget.js" as="script" />
       <link rel="stylesheet" href="https://use.typekit.net/yqg7ihd.css" />
       <script type="application/ld+json">
         {JSON.stringify(organizationData)}
