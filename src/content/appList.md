@@ -63,6 +63,13 @@ en:
               "url": "https://likecoin.github.io/likecoin-nft-dashboard",
               "isOfficial": true,
               "description": "Dashboard for NFT statistics on LikeCoin chain."
+            },
+            {
+              "image": "/uploads/apps/stake-like-co.svg",
+              "title": "NFT Marketplace",
+              "url": "https://likecoin.github.io/likecoin-nft-marketplace/",
+              "isOfficial": true,
+              "description": "Marketplace for all NFT on LikeCoin chain using x/likenft chain module."
             }
           ]
         },
@@ -218,6 +225,13 @@ zh:
               "url": "https://likecoin.github.io/likecoin-nft-dashboard",
               "isOfficial": true,
               "description": "Dashboard for NFT statistics on LikeCoin chain."
+            },
+            {
+              "image": "/uploads/apps/stake-like-co.svg",
+              "title": "NFT Marketplace",
+              "url": "https://likecoin.github.io/likecoin-nft-marketplace/",
+              "isOfficial": true,
+              "description": "Marketplace for all NFT on LikeCoin chain using x/likenft marketplace API."
             }
           ]
         },
