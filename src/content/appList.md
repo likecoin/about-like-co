@@ -112,6 +112,14 @@ en:
               "isOfficial": true,
               "url": "https://liker.land/getapp",
               "description": "The mobile app wallet for Likers. Readers can browse and reward content instantly; Creators can easily view followers' statistics, manage and stake LIKE. Wallet connect supports coming soon."
+            },
+            {
+              "image": "/uploads/wallets/leapwallet.svg",
+              "title": "Leap Wallet",
+              "buttonTitle": "Visit",
+              "isOfficial": false,
+              "url": "https://www.leapwallet.io/",
+              "description": "The only non-custodial super wallet for web3 currently supports LIKE. Live on Cosmos & Terra 2.0. Coming soon to Avalanche."
             }
           ]
         },
@@ -259,6 +267,14 @@ zh:
               "isOfficial": true,
               "url": "https://liker.land/getapp",
               "description": "The mobile app wallet for Likers. Readers can browse and reward content instantly; Creators can easily view followers' statistics, manage and stake LIKE. Wallet connect supports coming soon."
+            },
+            {
+              "image": "/uploads/wallets/leapwallet.svg",
+              "title": "Leap Wallet",
+              "buttonTitle": "Visit",
+              "isOfficial": false,
+              "url": "https://www.leapwallet.io/",
+              "description": "The only non-custodial super wallet for web3 currently supports LIKE. Live on Cosmos & Terra 2.0. Coming soon to Avalanche."
             }
           ]
         },
