@@ -57,19 +57,18 @@ const HomePage = ({ apps, writingNFTItems, blogUrl }) => {
 
       {/* Sub-Nav Section */}
       <section className="flex flex-col items-center relative mt-[32px] sm:mt-[88px]">
-        <nav className="flex justify-center">
+        <Button
+          className="text-[22px]"
+          preset="filled"
+          href="https://liker.land"
+          target="_blank"
+          rel="noopener"
+        >Explore Writing NFT</Button>
+        <nav className="flex justify-center mt-[24px]">
           <ul className="grid grid-cols-2 sm:flex flex-wrap gap-x-[8px] gap-y-[16px]">
             <li>
               <Button
-                preset="filled"
-                href="https://liker.land"
-                target="_blank"
-                rel="noopener"
-              >Writing NFT</Button>
-            </li>
-            <li>
-              <Button
-                preset="filled"
+                preset="outlined"
                 href="https://app.like.co"
                 target="_blank"
                 rel="noopener"

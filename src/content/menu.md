@@ -99,7 +99,7 @@ en:
           ]
         },
         {
-          "title": "Writing NFT",
+          "title": "Explore Writing NFT",
           "url": "https://liker.land",
           "preset": "filled"
         }
@@ -204,7 +204,7 @@ zh:
           ]
         },
         {
-          "title": "Writing NFT",
+          "title": "Explore Writing NFT",
           "url": "https://liker.land",
           "preset": "filled"
         }
