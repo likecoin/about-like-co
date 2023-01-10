@@ -40,6 +40,13 @@ module.exports = {
       },
     },
     "gatsby-transformer-remark",
-    "gatsby-plugin-netlify",
+    {
+      resolve: "gatsby-plugin-netlify",
+      options: {
+        headers: {
+          "/*": [`Referrer-Policy: strict-origin-when-cross-origin`],
+        },
+      },
+    },
   ],
 };
