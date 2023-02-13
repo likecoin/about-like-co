@@ -37,6 +37,24 @@ export default function Footer() {
           </li>
           <li>
             <Button
+              href="https://www.mintscan.io/likecoin"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Explorer
+            </Button>
+          </li>
+          <li>
+            <Button
+              href="https://coinmarketcap.com/currencies/likecoin/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Token
+            </Button>
+          </li>
+          <li>
+            <Button
               href="https://likecoin.notion.site/Branding-and-Design-96b3d582c3014003985a8819b31217fa"
               target="_blank"
               rel="noopener"
