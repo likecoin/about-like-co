@@ -44,7 +44,7 @@ en:
               "url": "https://iscn.io"
             },
             {
-              "title": "NFT Module Specification",
+              "title": "NFT Module",
               "url": "https://docs.like.co/developer/likenft/likecoin-nft-module-spec"
             },
             {
@@ -149,7 +149,7 @@ zh:
               "url": "https://iscn.io"
             },
             {
-              "title": "NFT Module Specification",
+              "title": "NFT Module",
               "url": "https://docs.like.co/developer/likenft/likecoin-nft-module-spec"
             },
             {
