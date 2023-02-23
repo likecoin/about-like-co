@@ -92,10 +92,6 @@ en:
               "url": "https://app.osmosis.zone/?from=ATOM&to=LIKE"
             },
             {
-              "title": "Liquid",
-              "url": "https://app.liquid.com/exchange/LIKEUSDT"
-            },
-            {
               "title": "How to trade?",
               "preset": "normal",
               "url": "https://docs.like.co/general-guides/trade"
@@ -199,10 +195,6 @@ zh:
             {
               "title": "Osmosis",
               "url": "https://app.osmosis.zone/?from=ATOM&to=LIKE"
-            },
-            {
-              "title": "Liquid",
-              "url": "https://app.liquid.com/exchange/LIKEUSDT"
             },
             {
               "title": "How to trade?",
