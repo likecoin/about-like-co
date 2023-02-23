@@ -58,7 +58,7 @@ en:
           "items": [
             {
               "title": "Staking",
-              "url": "https://stake.like.co"
+              "url": "https://dao.like.co/validators"
             },
             {
               "title": "Explorer",
@@ -179,7 +179,7 @@ zh:
           "items": [
             {
               "title": "Staking",
-              "url": "https://dao.like.co"
+              "url": "https://dao.like.co/validators"
             },
             {
               "title": "Explorer",
