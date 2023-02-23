@@ -162,7 +162,7 @@ const HomePage = ({ apps, writingNFTItems, blogUrl }) => {
             </li>
             <li>
               <ParagraphSection title="WordPress Plugin" href="https://w3press.io/">
-              Self-host bloggers can install the <b className="text-like-cyan">Writing NFT WordPress plugin</b> to place the NFT widget on their site and publish posts as NFTs.
+              Self-host bloggers can install the <b className="text-like-cyan">Web3Press WordPress plugin</b> to place the NFT widget on their site and publish posts as NFTs.
               </ParagraphSection>
             </li>
           </ul>
