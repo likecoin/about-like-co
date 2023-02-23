@@ -43,6 +43,7 @@ export default function LatestNewsItem({
           <img
             className="block object-contain w-full h-full"
             src={image}
+            title={title}
             alt={title}
           />
         </div>
