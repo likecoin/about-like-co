@@ -15,12 +15,12 @@ en:
               "description": "The home of Writing NFT. Explore the <a href=\"https:\/\/app.like.co/nft\" target=\"_blank\">NFT Portal</a> and widget features, allowing readers to collect writing as NFT on any website. Manage your Writing NFT portfolio and browse others’ collections."
             },
             {
-              "image": "/uploads/plugins/wordpress.svg",
-              "title": "WordPress Plugin",
+              "image": "/uploads/plugins/w3p.png",
+              "title": "Web3Press",
               "buttonTitle": "Visit",
               "isOfficial": true,
-              "url": "https://wordpress.org/plugins/likecoin/",
-              "description": "Integrated plugin that bridges WP users to web3. Register content metadata with ISCN. Store and publish content to the decentralized network."
+              "url": "http://w3press.io",
+              "description": "WordPress plugin that bridges WordPress users to web3. Register content metadata with ISCN. Store and publish Writing NFT to the decentralized network."
             },
             {
               "image": "/uploads/apps/depub-space.svg",
@@ -177,12 +177,12 @@ zh:
               "description": "The home of Writing NFT. Explore the <a href=\"https:\/\/app.like.co/nft\" target=\"_blank\">NFT Portal</a> and widget features, allowing readers to collect writing as NFT on any website. Manage your Writing NFT portfolio and browse others’ collections."
             },
             {
-              "image": "/uploads/plugins/wordpress.svg",
-              "title": "WordPress Plugin",
+              "image": "/uploads/plugins/w3p.png",
+              "title": "Web3Press",
               "buttonTitle": "Visit",
               "isOfficial": true,
-              "url": "https://wordpress.org/plugins/likecoin/",
-              "description": "Integrated plugin that bridges WP users to web3. Register content metadata with ISCN. Store and publish content to the decentralized network."
+              "url": "http://w3press.io",
+              "description": "WordPress plugin that bridges WordPress users to web3. Register content metadata with ISCN. Store and publish Writing NFT to the decentralized network."
             },
             {
               "image": "/uploads/apps/depub-space.svg",
