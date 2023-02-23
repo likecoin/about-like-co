@@ -11,6 +11,7 @@ import Divider from "./Divider"
 import ISCNIcon from "./icons/ISCN"
 import ClapIcon from "./icons/Clap"
 import DepubIcon from "./icons/DepubSpace"
+import MattersIcon from "./icons/Matters"
 import ArrowRight from "./icons/ArrowRight"
 
 function MenuItemIcon({ type, ...props }) {
@@ -21,6 +22,8 @@ function MenuItemIcon({ type, ...props }) {
       return <ISCNIcon {...props} />
     case 'depub':
       return <DepubIcon {...props} />
+    case 'matters':
+      return <MattersIcon {...props} />
     case 'w3p':
       return <img src="/uploads/plugins/w3p.png" alt="Web3Press" height="22" width="22" {...props} />
     default:
