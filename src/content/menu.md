@@ -61,6 +61,10 @@ en:
               "url": "https://dao.like.co/validators"
             },
             {
+              "title": "Token",
+              "url": "https://coinmarketcap.com/currencies/likecoin"
+            },
+            {
               "title": "Explorer",
               "url": "https://www.mintscan.io/likecoin"
             },
@@ -180,6 +184,10 @@ zh:
             {
               "title": "Staking",
               "url": "https://dao.like.co/validators"
+            },
+            {
+              "title": "Token",
+              "url": "https://coinmarketcap.com/currencies/likecoin/"
             },
             {
               "title": "Explorer",
