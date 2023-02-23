@@ -13,6 +13,11 @@ en:
               "icon": "liker-land"
             },
             {
+              "title": "Web3Press",
+              "url": "https://w3press.io/",
+              "icon": "w3p"
+            },
+            {
               "title": "depub.Space",
               "url": "https://depub.space/",
               "icon": "depub"
@@ -136,6 +141,11 @@ zh:
               "title": "liker.land",
               "url": "https://liker.land",
               "icon": "liker-land"
+            },
+            {
+              "title": "Web3Press",
+              "url": "https://w3press.io/",
+              "icon": "w3p"
             },
             {
               "title": "depub.Space",

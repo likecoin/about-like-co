@@ -21,6 +21,8 @@ function MenuItemIcon({ type, ...props }) {
       return <ISCNIcon {...props} />
     case 'depub':
       return <DepubIcon {...props} />
+    case 'w3p':
+      return <img src="/uploads/plugins/w3p.png" alt="Web3Press" height="22" width="22" {...props} />
     default:
       return null
   }
