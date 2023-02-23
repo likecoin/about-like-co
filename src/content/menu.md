@@ -32,8 +32,8 @@ en:
           "title": "Developer",
           "items": [
             {
-              "title": "GitHub",
-              "url": "https://github.com/likecoin"
+              "title": "LikeCoin Chain",
+              "url": "https://github.com/likecoin/likecoin-chain"
             },
             {
               "title": "Validator",
@@ -61,6 +61,10 @@ en:
               "url": "https://stake.like.co"
             },
             {
+              "title": "Explorer",
+              "url": "https://www.mintscan.io/likecoin"
+            },
+            {
               "title": "Documentation",
               "url": "https://docs.like.co/general-guides/governance/liquid-democracy"
             }
@@ -70,12 +74,24 @@ en:
           "title": "Community",
           "items": [
             {
+              "title": "Blog",
+              "url": "https://blog.like.co"
+            },
+            {
+              "title": "GitHub",
+              "url": "https://github.com/likecoin"
+            },
+            {
               "title": "Discord",
               "url": "https://discord.gg/W4DQ6peZZZ"
             },
             {
               "title": "Twitter",
               "url": "https://twitter.com/likecoin"
+            },
+            {
+              "title": "Liker Social (Mastodon)",
+              "url": "https://liker.social"
             }
           ]
         },
@@ -137,8 +153,8 @@ zh:
           "title": "Developer",
           "items": [
             {
-              "title": "GitHub",
-              "url": "https://github.com/likecoin"
+              "title": "LikeCoin Chain",
+              "url": "https://github.com/likecoin/likecoin-chain"
             },
             {
               "title": "Validator",
@@ -166,6 +182,10 @@ zh:
               "url": "https://dao.like.co"
             },
             {
+              "title": "Explorer",
+              "url": "https://www.mintscan.io/likecoin"
+            },
+            {
               "title": "Documentation",
               "url": "https://docs.like.co/general-guides/governance/liquid-democracy"
             }
@@ -175,12 +195,24 @@ zh:
           "title": "Community",
           "items": [
             {
+              "title": "Blog",
+              "url": "https://blog.like.co"
+            },
+            {
+              "title": "GitHub",
+              "url": "https://github.com/likecoin"
+            },
+            {
               "title": "Discord",
               "url": "https://discord.gg/W4DQ6peZZZ"
             },
             {
               "title": "Twitter",
               "url": "https://twitter.com/likecoin"
+            },
+            {
+              "title": "Liker Social (Mastodon)",
+              "url": "https://liker.social"
             }
           ]
         },
