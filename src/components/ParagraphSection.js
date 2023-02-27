@@ -8,7 +8,10 @@ export default function ParagraphSection({ title, children, href, ...props}) {
       <h3 className="mt-[8px] text-like-cyan-light text-[20px] font-bold underline">
         <a href={href} rel="noopener">{title}</a>
       </h3>
-      <p className="mt-[8px] text-like-cyan-vlight text-[16px] text-opacity-80">{children}</p>
+      <p
+        className="mt-[8px] text-like-cyan-vlight text-[16px] text-opacity-80"
+        dangerouslySetInnerHTML={{ __html: children }}
+      />
     </div>
   )
 }

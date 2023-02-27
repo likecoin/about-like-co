@@ -4,6 +4,16 @@ import { Link, StaticQuery, graphql } from "gatsby"
 import HeroImage from "../images/hero.png"
 import KeyVisualImage from "../images/key-visual.png"
 import ScrollDownHintImage from "../images/scroll-down-hint.png"
+import {
+  LIKECOIN_DESCRIPTION,
+  ISCN_DESCRIPTION,
+  IPFS_DESCRIPTION,
+  NFT_MODULE_DESCRIPTION,
+  TOKEN_DESCRIPTION,
+  WIDGET_DESCRIPTION,
+  PORTAL_DESCRIPTION,
+  WORDPRESS_PLUGIN_DESCRIPTION,
+} from "../text";
 
 import AppGridList from "../components/AppGridList"
 import AppItem from "../components/AppItem"
@@ -119,26 +129,26 @@ const HomePage = ({ apps, writingNFTItems, blogUrl }) => {
         </div>
         <div className="relative flex flex-col justify-center flex-grow md:max-w-[66%] p-[24px]">
           <GradientText tag="h2" className="text-[48px] text-center md:text-left">LikeCoin chain</GradientText>
-          <p className="mt-[24px] text-like-cyan-vlight text-[20px]">LikeCoin is an application-specific blockchain on decentralized publishing built on Cosmos SDK. LikeCoin provides open source products ranging from infrastructure to publishing tools for creators on board to Web3.</p>
+          <p className="mt-[24px] text-like-cyan-vlight text-[20px]">{LIKECOIN_DESCRIPTION}</p>
           <ul className="grid md:grid-cols-2	gap-x-[32px] gap-y-[48px] mt-[48px]">
             <li>
               <ParagraphSection title="Metadata Registry" href="https://iscn.io">
-              For the future of decentralized publishing to work, it is essential to have a global, decentralized, and resilient digital content registry as the cornerstone. International Standard Content Number, abbreviated as <a href="https://iscn.io" target="_blank" rel="noopener"><b className="text-like-cyan">ISCN</b></a>, is a metadata framework for digital content on the LikeCoin chain. ISCN is like a <b className="text-like-cyan">digital content ID</b>; helps to identify a specific digital content, records the content metadata, the intellectual property rights, and the stakeholders of the creation. ISCN also represents the <b className="text-like-cyan">property right layer</b> of LikeCoin NFT, it records the relationships between the content and creator.
+              {ISCN_DESCRIPTION}
               </ParagraphSection>
             </li>
             <li>
               <ParagraphSection title="Integrated with Arweave & IPFS" href="https://docs.like.co/developer/iscn/web-widget/iscn-ar">
-              LikeCoin provides permanent storage for LikeCoin network users, perma-pin IPFS files with Arweave, and records their storage location in the ISCN content metadata. Users can query and parse content metadata from LikeCoin chain. 
+              {IPFS_DESCRIPTION}
               </ParagraphSection>
             </li>
             <li>
               <ParagraphSection title="NFT Module" href="https://docs.like.co/developer/likenft/likecoin-nft-module-spec">
-              LikeCoin utilizes Cosmos SDK’s x/nft standard enables users to create NFT classes and mint NFTs under an ISCN metadata record. LikeCoin envisions a future where digital content is transformed from web-native to NFT native format. All content will be natively created on the blockchain and stored separately in the property right and NFT layers.
+              {NFT_MODULE_DESCRIPTION}
               </ParagraphSection>
             </li>
             <li>
               <ParagraphSection title="LIKE Token" href="https://coinmarketcap.com/currencies/likecoin/">
-              LIKE is the native token of the LikeCoin chain. It is the utility and governance token of the LikeCoin ecosystem. All network usage and services such as content registry, storage, writing NFT, and like reward mechanism will require LIKE to facilitate.
+              {TOKEN_DESCRIPTION}
               </ParagraphSection>
             </li>
           </ul>
@@ -152,17 +162,17 @@ const HomePage = ({ apps, writingNFTItems, blogUrl }) => {
           <ul className="grid gap-y-[48px] p-[24px]">
             <li>
               <ParagraphSection title="Widget" href="https://docs.like.co/general-guides/writing-nft/collect-writing-nft/nft-widget">
-              A <b className="text-like-cyan">mini NFT marketplace</b> that can be <b className="text-like-cyan">embedded</b> into any website. Writers can focus on creating quality content while readers can collect and own their favorite articles in NFT. Everyone can sell his or her work as NFT without worrying about the technical legwork. With a simplified process of creating an NFT, writers can quickly turn their writing into an NFT at the same time when they publish to the internet.
+              {WIDGET_DESCRIPTION}
               </ParagraphSection>
             </li>
             <li>
               <ParagraphSection title="Portal" href="https://app.like.co/">
-              Writers can turn any <b className="text-like-cyan">webpage</b> into an NFT. Enjoy the benefits of decentralized storage and create NFT in several clicks. No more pages not found, always <b className="text-like-cyan">accessible</b> to your content, truly own and <b className="text-like-cyan">monetize</b> your work.
+              {PORTAL_DESCRIPTION}
               </ParagraphSection>
             </li>
             <li>
               <ParagraphSection title="WordPress Plugin" href="https://w3press.io/">
-              Self-host bloggers can install the <b className="text-like-cyan">Web3Press WordPress plugin</b> to place the NFT widget on their site and publish posts as NFTs.
+              {WORDPRESS_PLUGIN_DESCRIPTION}
               </ParagraphSection>
             </li>
           </ul>
