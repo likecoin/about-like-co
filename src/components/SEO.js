@@ -3,6 +3,16 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useLocation } from "@reach/router"
 import { useStaticQuery, graphql } from "gatsby"
+import {
+  LIKECOIN_DESCRIPTION,
+  ISCN_DESCRIPTION,
+  IPFS_DESCRIPTION,
+  NFT_MODULE_DESCRIPTION,
+  TOKEN_DESCRIPTION,
+  WIDGET_DESCRIPTION,
+  PORTAL_DESCRIPTION,
+  WORDPRESS_PLUGIN_DESCRIPTION,
+} from "../text";
 
 const SEO = ({ title, description, image, isArticle }) => {
   const { pathname } = useLocation()
@@ -39,6 +49,74 @@ const SEO = ({ title, description, image, isArticle }) => {
       'https://www.facebook.com/Liker.Land',
     ],
   }
+  const faqData = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [{
+      '@type': 'Question',
+      name: 'What is LikeCoin?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: LIKECOIN_DESCRIPTION,
+      }
+    },
+    {
+      '@type': 'Question',
+      name: 'What is ISCN metadata registry?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: ISCN_DESCRIPTION,
+      }
+    },
+    {
+      '@type': 'Question',
+      name: 'What is the relationship between IPFS, Arweave and LikeCoin?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: IPFS_DESCRIPTION,
+      }
+    },
+    {
+      '@type': 'Question',
+      name: 'What is LikeCoin NFT module?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: NFT_MODULE_DESCRIPTION,
+      }
+    },
+    {
+      '@type': 'Question',
+      name: 'What is LIKE token?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: TOKEN_DESCRIPTION,
+      }
+    },
+    {
+      '@type': 'Question',
+      name: 'What is Writing NFT widget?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: WIDGET_DESCRIPTION,
+      }
+    },
+    {
+      '@type': 'Question',
+      name: 'What is Writing NFT portal?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: PORTAL_DESCRIPTION,
+      }
+    },
+    {
+      '@type': 'Question',
+      name: 'What is Writing NFT WordPress plugin?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: WORDPRESS_PLUGIN_DESCRIPTION,
+      }
+    }]
+  }
   return (
     <Helmet
       defaultTitle={defaultTitle}
@@ -68,7 +146,7 @@ const SEO = ({ title, description, image, isArticle }) => {
       <link rel="preload" href="https://substackapi.com/widget.js" as="script" />
       <link rel="stylesheet" href="https://use.typekit.net/yqg7ihd.css" />
       <script type="application/ld+json">
-        {JSON.stringify(organizationData)}
+        {JSON.stringify([organizationData, faqData])}
       </script>
     </Helmet>
   )
