@@ -1,6 +1,8 @@
 import * as React from "react"
 import { Link, StaticQuery, graphql } from "gatsby"
 
+import HeroVideoMp4 from "../videos/hero.mp4"
+import HeroVideoWebm from "../videos/hero.webm"
 import HeroImage from "../images/hero.png"
 import KeyVisualImage from "../images/key-visual.png"
 import ScrollDownHintImage from "../images/scroll-down-hint.png"
@@ -44,11 +46,19 @@ const HomePage = ({ apps, writingNFTItems, blogUrl }) => {
       <section>
         <div className="relative flex justify-center">
           <svg className="w-full h-full max-h-screen pointer-events-none" viewBox="0 0 2560 1966" />
-          <img
+          <video
+            autoPlay
+            playsInline
+            loop
+            muted
             className="absolute inset-0 top-0 object-contain object-top max-h-screen mx-auto transform scale-[1.8] translate-y-[40px] sm:translate-y-0"
-            src={HeroImage}
+            poster={HeroImage}
             alt="#Depub"
-          />
+            style={{ filter: 'brightness(0.9)' }}
+          >
+            <source src={HeroVideoWebm} type="video/webm" />
+            <source src={HeroVideoMp4} type="video/mp4" />
+          </video>
           <div className="absolute hidden inset-x-0 bottom-0 h-[25%] md:flex justify-center">
             <img
               className="w-[22px] mb-[24px] object-contain"
