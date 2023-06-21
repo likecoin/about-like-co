@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { EffectCards } from "swiper";
+import { EffectCards, Autoplay } from "swiper";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import classNames from "classnames";
 
@@ -76,7 +76,11 @@ export default function NFTWidgetSlideshow({ items }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   return (
     <Swiper
-      modules={[EffectCards]}
+      autoplay={{
+        delay: 2000,
+        disableOnInteraction: true,
+      }}
+      modules={[Autoplay, EffectCards]}
       centeredSlides={true}
       centerInsufficientSlides={true}
       effect="cards"
