@@ -167,7 +167,7 @@ const HomePage = ({ apps, writingNFTItems, blogUrl }) => {
 
       {/* Writing NFT Section */}
       <section className="mt-[96px]">
-        <GradientText tag="h2" className="px-[24px] text-[48px] text-center md:text-left">Writing NFT</GradientText>
+        <GradientText tag="h2" className="px-[24px] text-[48px] text-center md:text-left">Writing NFT - The POAP for content</GradientText>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-[48px] mt-[48px]">
           <ul className="grid gap-y-[48px] p-[24px]">
             <li>
