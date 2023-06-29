@@ -37,7 +37,7 @@ en:
               "description": "Decentralized content publishing platform. Direct publish articles to IPFS and utilize the LikeCoin reward mechanism to reward creativity in LIKE."
             },
             {
-              "image": "/uploads/apps/illustbuy.jpeg",
+              "image": "/uploads/apps/illustbuy.jpg",
               "title": "IllustBuy",
               "url": "https://illustbuy.com",
               "isOfficial": false,
@@ -206,7 +206,7 @@ zh:
               "description": "Decentralized content publishing platform. Direct publish articles to IPFS and utilize the LikeCoin reward mechanism to reward creativity in LIKE."
             },
             {
-              "image": "/uploads/apps/illustbuy.jpeg",
+              "image": "/uploads/apps/illustbuy.jpg",
               "title": "IllustBuy",
               "url": "https://illustbuy.com",
               "isOfficial": false,
