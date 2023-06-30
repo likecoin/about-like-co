@@ -176,7 +176,7 @@ const HomePage = ({ apps, writingNFTItems, blogUrl }) => {
               </ParagraphSection>
             </li>
             <li>
-              <ParagraphSection title="Portal" href="https://app.like.co/">
+              <ParagraphSection title="Publish" href="https://app.like.co/">
               {PORTAL_DESCRIPTION}
               </ParagraphSection>
             </li>
