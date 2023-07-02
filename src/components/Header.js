@@ -120,11 +120,11 @@ export function Header({ items = [], ...props }) {
                   <Transition
                     as={Fragment}
                     enter="transition ease-out duration-100"
-                    enterFrom="transform opacity-0 scale-95"
-                    enterTo="transform opacity-100 scale-100"
+                    enterFrom="opacity-0 scale-95"
+                    enterTo="opacity-100 scale-100"
                     leave="transition ease-in duration-75"
-                    leaveFrom="transform opacity-100 scale-100"
-                    leaveTo="transform opacity-0 scale-95"
+                    leaveFrom="opacity-100 scale-100"
+                    leaveTo="opacity-0 scale-95"
                   >
                     <Menu.Items className="absolute right-0 w-56 mt-2 origin-top-right bg-white rounded-[16px] p-[24px] shadow-lg focus:outline-none">
                       {secondLevelItems}
@@ -255,7 +255,7 @@ export function Header({ items = [], ...props }) {
                                   {topLevelItem.title}
                                   <ArrowDown
                                     className={cn("ml-[8px]", {
-                                      "transform rotate-180": open,
+                                      "rotate-180": open,
                                     })}
                                   />
                                 </Button>

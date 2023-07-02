@@ -51,7 +51,7 @@ const HomePage = ({ apps, writingNFTItems, blogUrl }) => {
             playsInline
             loop
             muted
-            className="absolute inset-0 top-0 object-contain object-top max-h-screen mx-auto transform scale-[1.8] translate-y-[40px] sm:translate-y-0"
+            className="absolute inset-0 top-0 object-contain object-top max-h-screen mx-auto scale-[1.8] translate-y-[40px] sm:translate-y-0"
             poster={HeroImage}
             alt="#Depub"
             style={{ filter: 'brightness(0.9)' }}
