@@ -4,7 +4,6 @@ import { Link, StaticQuery, graphql } from "gatsby"
 import HeroVideoMp4 from "../videos/hero.mp4"
 import HeroVideoWebm from "../videos/hero.webm"
 import HeroImage from "../images/hero.png"
-import KeyVisualImage from "../images/key-visual.png"
 import ScrollDownHintImage from "../images/scroll-down-hint.png"
 import {
   LIKECOIN_DESCRIPTION,
@@ -24,6 +23,7 @@ import Button from "../components/Button"
 import CommunityLink from "../components/CommunityLink"
 import Divider from "../components/Divider"
 import GradientText from "../components/GradientText"
+import KeyVisualImage from "../components/KeyVisualImage"
 import LatestNewsSection from "../components/LatestNewsSection"
 import Layout from "../components/Layout"
 import MediaCoverageSection from "../components/MediaCoverageSection"
@@ -131,11 +131,7 @@ const HomePage = ({ apps, writingNFTItems, blogUrl }) => {
       {/* LikeCoin chain Section */}
       <section className="relative flex mt-[88px]">
         <div className="relative flex justify-center flex-grow">
-          <img
-            className="absolute right-0 max-w-[750px] mr-[-120px] opacity-60 md:mr-0 md:opacity-100"
-            src={KeyVisualImage}
-            alt="LikeCoin chain"
-          />
+          <KeyVisualImage className="absolute right-0 max-w-[750px] mr-[-120px] opacity-60 md:mr-0 md:opacity-100" />
         </div>
         <div className="relative flex flex-col justify-center flex-grow md:max-w-[66%] p-[24px]">
           <GradientText tag="h2" className="text-[48px] text-center md:text-left">LikeCoin chain</GradientText>

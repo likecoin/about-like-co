@@ -23,8 +23,14 @@ module.exports = {
       'display': 'proxima-nova, sans-serif',
       'body': '"Open Sans", sans-serif',
     },
-    extend: {},
-  },
+    extend: {
+      keyframes: {
+        ['key-visual-pulse']: {
+          '0%, 100%': { opacity: '1' },
+          '25%, 75%': { opacity: '0' },
+        },
+      },
+    },
   },
   plugins: [aspectRatio],
 }
