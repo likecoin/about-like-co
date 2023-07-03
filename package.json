@@ -2,6 +2,9 @@
   "name": "about-like-co",
   "version": "1.0.0",
   "private": false,
+  "engines": {
+    "node": ">=16"
+  },
   "description": "LikeCoin",
   "author": "Ng Wing Tat, David",
   "keywords": [
