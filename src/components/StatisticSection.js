@@ -7,6 +7,7 @@ export default function StatisticSection() {
   const [writingNFTCount, setWritingNFTCount] = React.useState(0)
   const [walletsCount, setWalletsCount] = React.useState(0)
   const [likeDistribution, setLikeDistribution] = React.useState(0)
+  const [iscnOwnerCount, setIscnOwnerCount] = React.useState(0)
   React.useEffect(() => {
     async function fetchData() {
       try {
@@ -15,11 +16,13 @@ export default function StatisticSection() {
           NFTCount: writingNFTCountRaw = 0,
           LIKEs: likeDistributionRaw = 0,
           totalAddresses: walletsCountRaw = 0,
+          iscnOwnerCount: iscnOwnerCountRaw = 0,
         } = await fetch("https://like.co/api/like/like/stat").then((r) => r.json())
         setRegisteredContents(registeredContentsRaw)
         setWritingNFTCount(writingNFTCountRaw)
         setLikeDistribution(likeDistributionRaw)
         setWalletsCount(walletsCountRaw)
+        setIscnOwnerCount(iscnOwnerCountRaw)
       } catch (error) {
         console.error("Failed to fetch stat number")
         console.error(error)
@@ -33,35 +36,35 @@ export default function StatisticSection() {
         <ul className="mx-auto my-14 w-full lg:max-w-[1024px] xl:max-w-[1440px] min-w-[224px] gap-x-[96px] gap-y-[48px] grid md:grid-cols-2 xl:grid-cols-3 sm:flex-row flex-wrap justify-center">
           <li>
             <StatNumber
-              value={walletsCount || 103245}
+              value={walletsCount || 104183}
               unit="likers"
               label="wallet addresses with LIKE"
             />
           </li>
           <li>
             <StatNumber
-              value={18140}
+              value={iscnOwnerCount || 20135}
               unit="creators"
               label="have registered content in the LikeCoin network"
             />
           </li>
           <li>
             <StatNumber
-              value={registeredContents || 2361362}
+              value={registeredContents || 2368038}
               unit="content"
               label="are registered in the LikeCoin network"
             />
           </li>
           <li>
             <StatNumber
-              value={writingNFTCount || 13147}
+              value={writingNFTCount || 15095}
               unit="Writing NFT"
               label="are minted from content"
             />
           </li>
           <li>
             <StatNumber
-              value={likeDistribution || 55769330}
+              value={likeDistribution || 56186085}
               unit="LIKE"
               label="are distributed to creators"
             />
