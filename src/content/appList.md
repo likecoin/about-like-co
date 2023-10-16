@@ -44,6 +44,13 @@ en:
               "description": "Platform that connects illustrators and society for commissioned arts."
             },
             {
+              "image": "/uploads/apps/oice.jpg",
+              "title": "oice",
+              "url": "https://oice.com",
+              "isOfficial": true,
+              "description": "oice is the next generation visual novel editor, featuring friendly and codeless UI, high quality art and assets."
+            },
+            {
               "image": "/uploads/apps/depub-space.svg",
               "title": "depub.space",
               "url": "https://depub.space",
@@ -211,6 +218,13 @@ zh:
               "url": "https://illustbuy.com",
               "isOfficial": false,
               "description": "Platform that connects illustrators and society for commissioned arts."
+            },
+            {
+              "image": "/uploads/apps/oice.jpg",
+              "title": "oice",
+              "url": "https://oice.com",
+              "isOfficial": true,
+              "description": "oice is the next generation visual novel editor, featuring friendly and codeless UI, high quality art and assets."
             },
             {
               "image": "/uploads/apps/depub-space.svg",
