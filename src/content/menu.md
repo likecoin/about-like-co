@@ -114,7 +114,7 @@ en:
             },
             {
               "title": "Osmosis",
-              "url": "https://app.osmosis.zone/?from=ATOM&to=LIKE"
+              "url": "https://app.osmosis.zone/?from=USDC&to=LIKE"
             },
             {
               "title": "How to trade?",
@@ -244,7 +244,7 @@ zh:
             },
             {
               "title": "Osmosis",
-              "url": "https://app.osmosis.zone/?from=ATOM&to=LIKE"
+              "url": "https://app.osmosis.zone/?from=USDC&to=LIKE"
             },
             {
               "title": "How to trade?",

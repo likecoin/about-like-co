@@ -168,7 +168,7 @@ en:
             {
               "image": "/uploads/exchanges/osmosis.svg",
               "title": "Osmosis",
-              "url": "https://app.osmosis.zone/?from=UST&to=LIKE",
+              "url": "https://app.osmosis.zone/?from=USDC&to=LIKE",
               "isOfficial": true,
               "description": "Cosmos-based DEX & AMM protocol that designed for cross-chain assets. Easily swap between LIKE and other cross-chain assets."
             }
@@ -344,7 +344,7 @@ zh:
             {
               "image": "/uploads/exchanges/osmosis.svg",
               "title": "Osmosis",
-              "url": "https://app.osmosis.zone/?from=UST&to=LIKE",
+              "url": "https://app.osmosis.zone/?from=USDC&to=LIKE",
               "isOfficial": true,
               "description": "Cosmos-based DEX & AMM protocol that designed for cross-chain assets. Easily swap between LIKE and other cross-chain assets."
             }
