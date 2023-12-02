@@ -32,9 +32,16 @@ const SEO = ({ title, description, image, isArticle }) => {
     image: `${url}${image || defaultImage}`,
     url: `${url}${pathname}`,
   }
+  const websiteData = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'LikeCoin',
+    url: 'https://like.co/',
+  }
+
   const organizationData = {
     '@context': 'http://www.schema.org',
-    '@type': 'Organization',
+    '@type': 'Project',
     name: 'LikeCoin',
     url: 'https://like.co',
     logo: 'https://like.co/logo.png',
@@ -142,11 +149,11 @@ const SEO = ({ title, description, image, isArticle }) => {
         <meta name="twitter:description" content={seo.description} />
       )}
       {seo.image && <meta name="twitter:image" content={seo.image} />}
-      <link rel="prefetch" href="https://substackapi.com/widget.js"/>
+      <link rel="prefetch" href="https://substackapi.com/widget.js" />
       <link rel="preload" href="https://use.typekit.net/yqg7ihd.css" as="style" />
       <link rel="stylesheet" href="https://use.typekit.net/yqg7ihd.css" />
       <script type="application/ld+json">
-        {JSON.stringify([organizationData, faqData])}
+        {JSON.stringify([websiteData, organizationData, faqData])}
       </script>
     </Helmet>
   )
