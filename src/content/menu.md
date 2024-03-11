@@ -92,7 +92,7 @@ en:
             },
             {
               "title": "Discord",
-              "url": "https://discord.gg/W4DQ6peZZZ"
+              "url": "https://discord.gg/likecoin"
             },
             {
               "title": "Twitter",
@@ -222,7 +222,7 @@ zh:
             },
             {
               "title": "Discord",
-              "url": "https://discord.gg/W4DQ6peZZZ"
+              "url": "https://discord.gg/likecoin"
             },
             {
               "title": "Twitter",

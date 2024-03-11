@@ -9,7 +9,7 @@ const communityItems = {
   discord: {
     icon: DiscordIcon,
     label: "Discord",
-    url: "https://discord.gg/W4DQ6peZZZ",
+    url: "https://discord.gg/likecoin",
   },
   github: {
     icon: GitHubIcon,
