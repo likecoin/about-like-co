@@ -71,7 +71,7 @@ en:
             },
             {
               "title": "Explorer",
-              "url": "https://www.mintscan.io/likecoin"
+              "url": "https://ping.pub/likecoin"
             },
             {
               "title": "Documentation",
@@ -201,7 +201,7 @@ zh:
             },
             {
               "title": "Explorer",
-              "url": "https://www.mintscan.io/likecoin"
+              "url": "https://ping.pub/likecoin"
             },
             {
               "title": "Documentation",
