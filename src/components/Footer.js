@@ -37,7 +37,7 @@ export default function Footer() {
           </li>
           <li>
             <Button
-              href="https://www.mintscan.io/likecoin"
+              href="https://ping.pub/likecoin"
               target="_blank"
               rel="noopener noreferrer"
             >
