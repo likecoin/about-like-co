@@ -148,17 +148,16 @@ en:
           "title": "BlockExplorers",
           "items": [
             {
-              "image": "/uploads/block-explors/mintscan.svg",
-              "title": "Mintscan",
-              "isOfficial": true,
+              "image": "/uploads/block-explors/pingpub.png",
+              "title": "PingPub",
               "buttonTitle": "Visit",
-              "url": "https://www.mintscan.io/likecoin"
+              "url": "https://ping.pub/likecoin"
             },
             {
-              "image": "/uploads/block-explors/bigdipper.svg",
-              "title": "Big Dipper",
+              "image": "/uploads/block-explors/atomscan.png",
+              "title": "ATOMScan",
               "buttonTitle": "Visit",
-              "url": "https://likecoin.bigdipper.live"
+              "url": "https://atomscan.com/likecoin"
             }
           ]
         },
@@ -324,17 +323,16 @@ zh:
           "title": "BlockExplorers",
           "items": [
             {
-              "image": "/uploads/block-explors/mintscan.svg",
-              "title": "Mintscan",
-              "isOfficial": true,
+              "image": "/uploads/block-explors/pingpub.png",
+              "title": "PingPub",
               "buttonTitle": "Visit",
-              "url": "https://www.mintscan.io/likecoin"
+              "url": "https://ping.pub/likecoin"
             },
             {
-              "image": "/uploads/block-explors/bigdipper.svg",
-              "title": "Big Dipper",
+              "image": "/uploads/block-explors/atomscan.png",
+              "title": "ATOMScan",
               "buttonTitle": "Visit",
-              "url": "https://likecoin.bigdipper.live"
+              "url": "https://atomscan.com/likecoin"
             }
           ]
         },
