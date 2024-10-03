@@ -5,7 +5,6 @@ import StatNumber from "./StatNumber"
 export default function StatisticSection() {
   const [registeredContents, setRegisteredContents] = React.useState(0)
   const [writingNFTCount, setWritingNFTCount] = React.useState(0)
-  const [walletsCount, setWalletsCount] = React.useState(0)
   const [likeDistribution, setLikeDistribution] = React.useState(0)
   const [iscnOwnerCount, setIscnOwnerCount] = React.useState(0)
   React.useEffect(() => {
@@ -15,13 +14,11 @@ export default function StatisticSection() {
           totalISCNCount: registeredContentsRaw = 0,
           NFTCount: writingNFTCountRaw = 0,
           LIKEs: likeDistributionRaw = 0,
-          totalAddresses: walletsCountRaw = 0,
           iscnOwnerCount: iscnOwnerCountRaw = 0,
         } = await fetch("https://like.co/api/like/like/stat").then((r) => r.json())
         setRegisteredContents(registeredContentsRaw)
         setWritingNFTCount(writingNFTCountRaw)
         setLikeDistribution(likeDistributionRaw)
-        setWalletsCount(walletsCountRaw)
         setIscnOwnerCount(iscnOwnerCountRaw)
       } catch (error) {
         console.error("Failed to fetch stat number")
@@ -34,13 +31,6 @@ export default function StatisticSection() {
     <section className="relative mt-[88px] px-[48px]">
       <div>
         <ul className="mx-auto my-14 w-full lg:max-w-[1024px] xl:max-w-[1440px] min-w-[224px] gap-x-[96px] gap-y-[48px] grid md:grid-cols-2 xl:grid-cols-3 sm:flex-row flex-wrap justify-center">
-          <li>
-            <StatNumber
-              value={walletsCount || 104183}
-              unit="likers"
-              label="wallet addresses with LIKE"
-            />
-          </li>
           <li>
             <StatNumber
               value={iscnOwnerCount || 20135}
