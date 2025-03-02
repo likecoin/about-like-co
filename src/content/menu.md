@@ -45,10 +45,6 @@ en:
               "url": "https://docs.like.co/validator/"
             },
             {
-              "title": "ISCN Specification",
-              "url": "https://iscn.io"
-            },
-            {
               "title": "NFT Module",
               "url": "https://docs.like.co/developer/likenft/likecoin-nft-module-spec"
             },
@@ -173,10 +169,6 @@ zh:
             {
               "title": "Validator",
               "url": "https://docs.like.co/validator/"
-            },
-            {
-              "title": "ISCN Specification",
-              "url": "https://iscn.io"
             },
             {
               "title": "NFT Module",
