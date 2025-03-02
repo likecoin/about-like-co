@@ -138,7 +138,7 @@ const HomePage = ({ apps, writingNFTItems, blogUrl }) => {
           <p className="mt-[24px] text-like-cyan-vlight text-[20px]">{LIKECOIN_DESCRIPTION}</p>
           <ul className="grid md:grid-cols-2	gap-x-[32px] gap-y-[48px] mt-[48px]">
             <li>
-              <ParagraphSection title="Metadata Registry" href="https://iscn.io">
+              <ParagraphSection title="Metadata Registry">
               {ISCN_DESCRIPTION}
               </ParagraphSection>
             </li>
