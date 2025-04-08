@@ -15,7 +15,7 @@ export default function StatisticSection() {
           NFTCount: writingNFTCountRaw = 0,
           LIKEs: likeDistributionRaw = 0,
           iscnOwnerCount: iscnOwnerCountRaw = 0,
-        } = await fetch("https://like.co/api/like/like/stat").then((r) => r.json())
+        } = await fetch("https://api.like.co/like/like/stat").then((r) => r.json())
         setRegisteredContents(registeredContentsRaw)
         setWritingNFTCount(writingNFTCountRaw)
         setLikeDistribution(likeDistributionRaw)
