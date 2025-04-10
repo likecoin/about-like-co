@@ -120,7 +120,7 @@ en:
           ]
         },
         {
-          "title": "Explore Writing NFT",
+          "title": "Explore NFT Book",
           "url": "https://liker.land",
           "preset": "filled"
         }
@@ -246,7 +246,7 @@ zh:
           ]
         },
         {
-          "title": "Explore Writing NFT",
+          "title": "Explore NFT Book",
           "url": "https://liker.land",
           "preset": "filled"
         }

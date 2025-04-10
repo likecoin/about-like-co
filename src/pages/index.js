@@ -83,7 +83,7 @@ const HomePage = ({ apps, writingNFTItems, blogUrl }) => {
           href="https://liker.land"
           target="_blank"
           rel="noopener"
-        >Explore Writing NFT</Button>
+        >Explore NFT Book</Button>
         <nav className="flex justify-center mt-[24px]">
           <ul className="grid grid-cols-2 sm:flex flex-wrap gap-x-[8px] gap-y-[16px]">
             <li>
