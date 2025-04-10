@@ -120,6 +120,11 @@ en:
           ]
         },
         {
+          "title": "Liker ID",
+          "url": "https://like.co/in",
+          "preset": "outlined"
+        },
+        {
           "title": "Explore NFT Book",
           "url": "https://liker.land",
           "preset": "filled"
@@ -244,6 +249,11 @@ zh:
               "url": "https://docs.like.co/general-guides/trade"
             }
           ]
+        },
+        {
+          "title": "Liker ID",
+          "url": "https://like.co/in",
+          "preset": "outlined"
         },
         {
           "title": "Explore NFT Book",
