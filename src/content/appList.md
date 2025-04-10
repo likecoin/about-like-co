@@ -9,10 +9,10 @@ en:
           "items": [
             {
               "image": "/uploads/apps/liker-land.svg",
-              "title": "Writing NFT - Liker Land",
+              "title": "Liker Land - decentralized bookstore",
               "url": "https://liker.land",
               "isOfficial": true,
-              "description": "The home of Writing NFT. Explore the <a href=\"https:\/\/app.like.co/nft\" target=\"_blank\">NFT Portal</a> and widget features, allowing readers to collect writing as NFT on any website. Manage your Writing NFT portfolio and browse others’ collections."
+              "description": "The home of NFT Book. Explore the <a href=\"https:\/\/app.like.co/nft\" target=\"_blank\">NFT Portal</a> and widget features, allowing readers to collect writing as NFT on any website. Manage your NFT Books portfolio and browse others’ collections."
             },
             {
               "image": "/uploads/plugins/w3p.png",
@@ -184,10 +184,10 @@ zh:
           "items": [
             {
               "image": "/uploads/apps/liker-land.svg",
-              "title": "Writing NFT - Liker Land",
+              "title": "Liker Land - decentralized bookstore",
               "url": "https://liker.land",
               "isOfficial": true,
-              "description": "The home of Writing NFT. Explore the <a href=\"https:\/\/app.like.co/nft\" target=\"_blank\">NFT Portal</a> and widget features, allowing readers to collect writing as NFT on any website. Manage your Writing NFT portfolio and browse others’ collections."
+              "description": "The home of NFT Book. Explore the <a href=\"https:\/\/app.like.co/nft\" target=\"_blank\">NFT Portal</a> and widget features, allowing readers to collect writing as NFT on any website. Manage your NFT Books portfolio and browse others’ collections."
             },
             {
               "image": "/uploads/plugins/w3p.png",
